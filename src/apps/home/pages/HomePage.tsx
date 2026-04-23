@@ -290,6 +290,18 @@ export default function HomePage() {
             Built with spaced repetition algorithm (SM-2) for optimal retention
           </p>
         </div>
+
+        <footer className="text-center mt-8">
+          <a
+            href="https://github.com/HarshDutt17/beat-interview"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm hover:underline"
+            style={{ color: 'var(--color-primary)' }}
+          >
+            View on GitHub
+          </a>
+        </footer>
       </div>
     </div>
   )
