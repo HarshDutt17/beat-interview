@@ -1,6 +1,6 @@
 # DSA Flash Cards - Spaced Repetition Learning Platform
 
-[![Node.js](https://img.shields.io/badge/Node.js-22+-green.svg)](https://nodejs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-20+-green.svg)](https://nodejs.org/)
 [![React](https://img.shields.io/badge/React-18.3-blue.svg)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue.svg)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite-5.4-purple.svg)](https://vitejs.dev/)
@@ -11,24 +11,18 @@ A modern, interactive spaced repetition learning platform designed to help devel
 ## 🌟 Features
 
 ### 🧠 **BeatCode - DSA Mastery**
-- **750+ Curated Problems** from top coding platforms
+- **250+ Curated Problems** from top coding platforms
 - **Smart Scheduling** using SM-2 spaced repetition algorithm
 - **Topic-wise Organization** (Arrays, Graphs, Dynamic Programming, etc.)
 - **Difficulty Progression** (Easy → Medium → Hard)
 - **Progress Tracking** with streaks and statistics
 - **Custom Study Sessions** with flexible filtering
 
-### 🏗️ **BeatDesign - System Design Excellence**  
+### 🏗️ **BeatDesign - System Design Excellence**
 - **Comprehensive Concepts** (Scalability, Load Balancing, Databases)
 - **Real-world Case Studies** and architecture patterns
 - **Interactive Learning** with spaced repetition
 - **Progressive Difficulty** from basics to advanced topics
-
-### 📊 **Advanced Analytics**
-- Study streak tracking
-- Performance metrics by topic and difficulty
-- Due card notifications and scheduling
-- Session completion tracking
 
 ## 🧮 Learning Algorithm - SM-2 Spaced Repetition
 
@@ -42,7 +36,7 @@ This platform implements the **SuperMemo SM-2 algorithm**, a scientifically-prov
 
 ### Performance Ratings
 - **Failed** (1.3x ease): Couldn't solve → Review soon
-- **Solved** (2.5x ease): Standard progression → Normal interval  
+- **Solved** (2.5x ease): Standard progression → Normal interval
 - **Easy** (2.6x ease): Too simple → Longer interval
 
 ### Interval Progression
@@ -63,7 +57,7 @@ All user data is stored locally in your browser using `localStorage`:
     "problemProgress": {
       "problem-id": {
         "reps": 3,           // Number of successful reviews
-        "ease": 2.5,         // Ease factor (1.3 - 2.6)  
+        "ease": 2.5,         // Ease factor (1.3 - 2.6)
         "intervalDays": 16,  // Days until next review
         "lastReviewed": "2024-04-23",
         "nextDue": "2024-05-09"
@@ -83,13 +77,13 @@ All user data is stored locally in your browser using `localStorage`:
 
 ### Privacy-First Design
 - **No server storage** - your progress stays on your device
-- **No tracking** - we don't collect any personal data  
+- **No tracking** - we don't collect any personal data
 - **Export/Import** functionality for data portability (planned)
 
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Node.js 22+ 
+- Node.js 20+
 - npm or yarn
 
 ### Installation
@@ -128,11 +122,11 @@ src/
 ├── apps/
 │   ├── beatcode/          # DSA Problems Module
 │   │   ├── components/    # Problem cards, UI components
-│   │   ├── data/         # 750+ curated problems
+│   │   ├── data/         # 250+ curated problems
 │   │   ├── pages/        # Dashboard, Study, Browse
 │   │   └── services/     # Progress tracking, SM-2 algorithm
 │   │
-│   └── beatdesign/       # System Design Module  
+│   └── beatdesign/       # System Design Module
 │       ├── components/   # Concept cards, UI components
 │       ├── data/        # System design concepts & studies
 │       ├── pages/       # Dashboard, Study sessions
@@ -164,7 +158,7 @@ src/
 
 ### Content Categories
 - **Arrays & Strings**: 95 problems
-- **Linked Lists**: 45 problems  
+- **Linked Lists**: 45 problems
 - **Trees & Graphs**: 128 problems
 - **Dynamic Programming**: 87 problems
 - **System Design**: 156 concepts
@@ -224,7 +218,7 @@ git push origin feature/amazing-feature
 
 ### Local Metrics Tracked
 - Problems solved by difficulty
-- Study streaks and consistency  
+- Study streaks and consistency
 - Topic-wise progress
 - Time spent studying
 - Retention rates per topic
@@ -241,7 +235,7 @@ This app respects your privacy - no data is sent to external services.
 
 ## 📱 Browser Compatibility
 
-- ✅ Chrome 90+ 
+- ✅ Chrome 90+
 - ✅ Firefox 88+
 - ✅ Safari 14+
 - ✅ Edge 90+
@@ -253,16 +247,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - **SuperMemo** for the SM-2 spaced repetition algorithm
-- **LeetCode** for inspiration and problem references  
+- **LeetCode** for inspiration and problem references
 - **Open source community** for tools and libraries
 - **Contributors** who help improve this project
 
 ## 🔗 Links
 
-- **Live Demo**: [dsa-flashcards.vercel.app](https://your-deployment-url.vercel.app)
-- **GitHub**: [github.com/your-username/DSAFlashCards](https://github.com/your-username/DSAFlashCards)
-- **Issues**: [Report bugs or request features](https://github.com/your-username/DSAFlashCards/issues)
-- **Discussions**: [Join the community](https://github.com/your-username/DSAFlashCards/discussions)
+- **Live Demo**: [beat-interview.vercel.app](https://beat-interview.vercel.app/)
+- **GitHub**: [github.com/HarshDutt17/beat-interview/](https://github.com/HarshDutt17/beat-interview/)
+- **Issues**: [Report bugs or request features](https://github.com/HarshDutt17/beat-interview/issues)
 
 ---
 
