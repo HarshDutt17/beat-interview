@@ -1,0 +1,2028 @@
+{
+  "metadata": {
+    "title": "System Design Case Studies",
+    "description": "Real-world system architectures from industry leaders and innovative companies",
+    "totalStudies": 50,
+    "sources": [
+      "systemDesign.json",
+      "SystemDesign2.json"
+    ],
+    "lastUpdated": "2026-04-23",
+    "version": "1.0.0"
+  },
+  "studies": [
+    {
+      "id": "study-uber",
+      "title": "Uber - Real-time Geospatial Dispatch",
+      "company": "Uber",
+      "focus": "Real-time Geospatial Dispatch",
+      "overview": "In-depth analysis of Uber's system architecture, focusing on Real-time Geospatial Dispatch. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Medium",
+      "orderIndex": 0,
+      "keyConcepts": [
+        "Real-time Geospatial Dispatch",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Uber Engineering Article",
+          "link": "https://eng.uber.com/uber-tech-stack-part-two/",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Uber System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=umWABit-wbk",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-whatsapp",
+      "title": "WhatsApp - Low Latency Messaging & Scale",
+      "company": "WhatsApp",
+      "focus": "Low Latency Messaging & Scale",
+      "overview": "In-depth analysis of WhatsApp's system architecture, focusing on Low Latency Messaging & Scale. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Medium",
+      "orderIndex": 1,
+      "keyConcepts": [
+        "Low Latency Messaging & Scale",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "WhatsApp Engineering Article",
+          "link": "http://highscalability.com/blog/2014/2/26/the-whatsapp-architecture-facebook-bought-for-19-billion.html",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "WhatsApp System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=vvhC64hQZMk",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-twitter",
+      "title": "Twitter - High Read-Throughput & Fanout",
+      "company": "Twitter",
+      "focus": "High Read-Throughput & Fanout",
+      "overview": "In-depth analysis of Twitter's system architecture, focusing on High Read-Throughput & Fanout. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Medium",
+      "orderIndex": 2,
+      "keyConcepts": [
+        "High Read-Throughput & Fanout",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Twitter Engineering Article",
+          "link": "https://blog.twitter.com/engineering/en_us/topics/infrastructure/2017/the-infrastructure-behind-twitter-scale",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Twitter System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=wYk0xPP_P_8",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-google-maps",
+      "title": "Google Maps - Graph Algorithms & Spatial DB",
+      "company": "Google Maps",
+      "focus": "Graph Algorithms & Spatial DB",
+      "overview": "In-depth analysis of Google Maps's system architecture, focusing on Graph Algorithms & Spatial DB. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Medium",
+      "orderIndex": 3,
+      "keyConcepts": [
+        "Graph Algorithms & Spatial DB",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Google Maps Engineering Article",
+          "link": "https://blog.google/products/maps/google-maps-101-how-routing-works/",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Google Maps System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=jk3yA2P0Z00",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-netflix",
+      "title": "Netflix - Global CDN (Open Connect) & Microservices",
+      "company": "Netflix",
+      "focus": "Global CDN (Open Connect) & Microservices",
+      "overview": "In-depth analysis of Netflix's system architecture, focusing on Global CDN (Open Connect) & Microservices. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Medium",
+      "orderIndex": 4,
+      "keyConcepts": [
+        "Global CDN (Open Connect) & Microservices",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Netflix Engineering Article",
+          "link": "https://netflixtechblog.com/netflix-microservices-architecture-2c1b52bd6189",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Netflix System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=lYoKdXk0ZpI",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-tinder",
+      "title": "Tinder - Geospatial Matching & Swipes",
+      "company": "Tinder",
+      "focus": "Geospatial Matching & Swipes",
+      "overview": "In-depth analysis of Tinder's system architecture, focusing on Geospatial Matching & Swipes. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Medium",
+      "orderIndex": 5,
+      "keyConcepts": [
+        "Geospatial Matching & Swipes",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Tinder Engineering Article",
+          "link": "https://www.highscalability.com/how-tinder-scales-to-handle-1-5-billion-swipes-a-day/",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Tinder System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=tndzLcgxgPI",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-instagram",
+      "title": "Instagram - Photo Storage & Feed Generation",
+      "company": "Instagram",
+      "focus": "Photo Storage & Feed Generation",
+      "overview": "In-depth analysis of Instagram's system architecture, focusing on Photo Storage & Feed Generation. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Medium",
+      "orderIndex": 6,
+      "keyConcepts": [
+        "Photo Storage & Feed Generation",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Instagram Engineering Article",
+          "link": "https://engineering.fb.com/2015/12/18/data-infrastructure/under-the-hood-building-out-the-infrastructure-for-instagram-s-search/",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Instagram System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=hnpzNAPiC0E",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-discord",
+      "title": "Discord - Real-time State & WebSockets",
+      "company": "Discord",
+      "focus": "Real-time State & WebSockets",
+      "overview": "In-depth analysis of Discord's system architecture, focusing on Real-time State & WebSockets. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Medium",
+      "orderIndex": 7,
+      "keyConcepts": [
+        "Real-time State & WebSockets",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Discord Engineering Article",
+          "link": "https://discord.com/blog/how-discord-stores-trillions-of-messages",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Discord System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=o0i1-sA2B0s",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-facebook",
+      "title": "Facebook - Newsfeed & Social Graph",
+      "company": "Facebook",
+      "focus": "Newsfeed & Social Graph",
+      "overview": "In-depth analysis of Facebook's system architecture, focusing on Newsfeed & Social Graph. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Medium",
+      "orderIndex": 8,
+      "keyConcepts": [
+        "Newsfeed & Social Graph",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Facebook Engineering Article",
+          "link": "https://engineering.fb.com/2016/02/23/core-data/tao-the-power-of-the-graph/",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Facebook System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=9-hjBGxuiEs",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-amazon",
+      "title": "Amazon - E-commerce & DynamoDB",
+      "company": "Amazon",
+      "focus": "E-commerce & DynamoDB",
+      "overview": "In-depth analysis of Amazon's system architecture, focusing on E-commerce & DynamoDB. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Medium",
+      "orderIndex": 9,
+      "keyConcepts": [
+        "E-commerce & DynamoDB",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Amazon Engineering Article",
+          "link": "https://www.allthingsdistributed.com/2007/10/amazons_dynamo.html",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Amazon System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=EPwEks2aXW4",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-youtube",
+      "title": "YouTube - Video Transcoding & Storage",
+      "company": "YouTube",
+      "focus": "Video Transcoding & Storage",
+      "overview": "In-depth analysis of YouTube's system architecture, focusing on Video Transcoding & Storage. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Medium",
+      "orderIndex": 10,
+      "keyConcepts": [
+        "Video Transcoding & Storage",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "YouTube Engineering Article",
+          "link": "http://highscalability.com/youtube-architecture",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "YouTube System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=jKzheS3kG-A",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-airbnb",
+      "title": "Airbnb - Search & Booking Consistency",
+      "company": "Airbnb",
+      "focus": "Search & Booking Consistency",
+      "overview": "In-depth analysis of Airbnb's system architecture, focusing on Search & Booking Consistency. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Medium",
+      "orderIndex": 11,
+      "keyConcepts": [
+        "Search & Booking Consistency",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Airbnb Engineering Article",
+          "link": "https://medium.com/airbnb-engineering",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Airbnb System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=Zc0Lkt2x780",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-slack",
+      "title": "Slack - Real-time Collaboration",
+      "company": "Slack",
+      "focus": "Real-time Collaboration",
+      "overview": "In-depth analysis of Slack's system architecture, focusing on Real-time Collaboration. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Medium",
+      "orderIndex": 12,
+      "keyConcepts": [
+        "Real-time Collaboration",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Slack Engineering Article",
+          "link": "https://slack.engineering/scaling-slacks-architecture/",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Slack System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=WE9c9AZm-fg",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-dropbox",
+      "title": "Dropbox - File Synchronization",
+      "company": "Dropbox",
+      "focus": "File Synchronization",
+      "overview": "In-depth analysis of Dropbox's system architecture, focusing on File Synchronization. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Medium",
+      "orderIndex": 13,
+      "keyConcepts": [
+        "File Synchronization",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Dropbox Engineering Article",
+          "link": "https://dropbox.tech/infrastructure/magic-pocket-infrastructure",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Dropbox System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=PE4gwstWhmc",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-zoom",
+      "title": "Zoom - Video Conferencing & WebRTC",
+      "company": "Zoom",
+      "focus": "Video Conferencing & WebRTC",
+      "overview": "In-depth analysis of Zoom's system architecture, focusing on Video Conferencing & WebRTC. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Medium",
+      "orderIndex": 14,
+      "keyConcepts": [
+        "Video Conferencing & WebRTC",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Zoom Engineering Article",
+          "link": "https://explore.zoom.us/docs/doc/Zoom-Security-White-Paper.pdf",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Zoom System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=GjYfS_K-4aM",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-stripe",
+      "title": "Stripe - Payment Gateway Consistency",
+      "company": "Stripe",
+      "focus": "Payment Gateway Consistency",
+      "overview": "In-depth analysis of Stripe's system architecture, focusing on Payment Gateway Consistency. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Medium",
+      "orderIndex": 15,
+      "keyConcepts": [
+        "Payment Gateway Consistency",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Stripe Engineering Article",
+          "link": "https://stripe.com/blog/idempotency",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Stripe System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=qX3H_bZgH-w",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-ticketmaster",
+      "title": "Ticketmaster - High Concurrency Bookings",
+      "company": "Ticketmaster",
+      "focus": "High Concurrency Bookings",
+      "overview": "In-depth analysis of Ticketmaster's system architecture, focusing on High Concurrency Bookings. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Medium",
+      "orderIndex": 16,
+      "keyConcepts": [
+        "High Concurrency Bookings",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Ticketmaster Engineering Article",
+          "link": "https://engineering.ticketmaster.com/",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Ticketmaster System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=vVjR-rG3-y0",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-spotify",
+      "title": "Spotify - Audio Streaming & Content Discovery",
+      "company": "Spotify",
+      "focus": "Audio Streaming & Content Discovery",
+      "overview": "In-depth analysis of Spotify's system architecture, focusing on Audio Streaming & Content Discovery. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 17,
+      "keyConcepts": [
+        "Audio Streaming & Content Discovery",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Spotify Engineering Article",
+          "link": "https://engineering.atspotify.com/architecture/",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Spotify System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=p4k338tZfB0",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-robinhood",
+      "title": "Robinhood - Trading & ACID Transactions",
+      "company": "Robinhood",
+      "focus": "Trading & ACID Transactions",
+      "overview": "In-depth analysis of Robinhood's system architecture, focusing on Trading & ACID Transactions. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 18,
+      "keyConcepts": [
+        "Trading & ACID Transactions",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Robinhood Engineering Article",
+          "link": "https://robinhood.engineering/",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Robinhood System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=uD9H6RXXH1c",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-yelp",
+      "title": "Yelp - Proximity Search & Reviews",
+      "company": "Yelp",
+      "focus": "Proximity Search & Reviews",
+      "overview": "In-depth analysis of Yelp's system architecture, focusing on Proximity Search & Reviews. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 19,
+      "keyConcepts": [
+        "Proximity Search & Reviews",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Yelp Engineering Article",
+          "link": "https://engineeringblog.yelp.com/",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Yelp System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=1eJEXXf9K04",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-pinterest",
+      "title": "Pinterest - Image Processing & Sharding",
+      "company": "Pinterest",
+      "focus": "Image Processing & Sharding",
+      "overview": "In-depth analysis of Pinterest's system architecture, focusing on Image Processing & Sharding. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 20,
+      "keyConcepts": [
+        "Image Processing & Sharding",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Pinterest Engineering Article",
+          "link": "https://medium.com/@Pinterest_Engineering/sharding-pinterest-how-we-scaled-our-mysql-fleet-3f341e96ce6f",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Pinterest System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=4y1h6q1W_gE",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-snapchat",
+      "title": "Snapchat - Ephemeral Storage & Google App Engine",
+      "company": "Snapchat",
+      "focus": "Ephemeral Storage & Google App Engine",
+      "overview": "In-depth analysis of Snapchat's system architecture, focusing on Ephemeral Storage & Google App Engine. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 21,
+      "keyConcepts": [
+        "Ephemeral Storage & Google App Engine",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Snapchat Engineering Article",
+          "link": "https://eng.snap.com/building-snap-engineering",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Snapchat System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=yYJtzDkntx4",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-linkedin",
+      "title": "LinkedIn - Graph Queries & Kafka Origins",
+      "company": "LinkedIn",
+      "focus": "Graph Queries & Kafka Origins",
+      "overview": "In-depth analysis of LinkedIn's system architecture, focusing on Graph Queries & Kafka Origins. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 22,
+      "keyConcepts": [
+        "Graph Queries & Kafka Origins",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "LinkedIn Engineering Article",
+          "link": "https://engineering.linkedin.com/blog",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "LinkedIn System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=D-w-wB9A6R8",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-twilio",
+      "title": "Twilio - Telephony & High Availability",
+      "company": "Twilio",
+      "focus": "Telephony & High Availability",
+      "overview": "In-depth analysis of Twilio's system architecture, focusing on Telephony & High Availability. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 23,
+      "keyConcepts": [
+        "Telephony & High Availability",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Twilio Engineering Article",
+          "link": "https://www.twilio.com/blog/engineering",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Twilio System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=l49k1YdDweI",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-github",
+      "title": "GitHub - Git Replication & Storage",
+      "company": "GitHub",
+      "focus": "Git Replication & Storage",
+      "overview": "In-depth analysis of GitHub's system architecture, focusing on Git Replication & Storage. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 24,
+      "keyConcepts": [
+        "Git Replication & Storage",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "GitHub Engineering Article",
+          "link": "https://github.blog/engineering/",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "GitHub System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=XvKIBQ-sFCA",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-reddit",
+      "title": "Reddit - Tree structures & Caching",
+      "company": "Reddit",
+      "focus": "Tree structures & Caching",
+      "overview": "In-depth analysis of Reddit's system architecture, focusing on Tree structures & Caching. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 25,
+      "keyConcepts": [
+        "Tree structures & Caching",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Reddit Engineering Article",
+          "link": "https://www.redditinc.com/blog",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Reddit System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=oVADmQZ_wG0",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-shopify",
+      "title": "Shopify - Multi-tenant E-commerce",
+      "company": "Shopify",
+      "focus": "Multi-tenant E-commerce",
+      "overview": "In-depth analysis of Shopify's system architecture, focusing on Multi-tenant E-commerce. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 26,
+      "keyConcepts": [
+        "Multi-tenant E-commerce",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Shopify Engineering Article",
+          "link": "https://shopify.engineering/",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Shopify System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=gXwJ41bFqIQ",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-uber-eats",
+      "title": "Uber Eats - Four-sided Marketplace",
+      "company": "Uber Eats",
+      "focus": "Four-sided Marketplace",
+      "overview": "In-depth analysis of Uber Eats's system architecture, focusing on Four-sided Marketplace. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 27,
+      "keyConcepts": [
+        "Four-sided Marketplace",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Uber Eats Engineering Article",
+          "link": "https://eng.uber.com/category/uber-eats/",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Uber Eats System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=1vK338tZfB0",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-quora",
+      "title": "Quora - Q&A Scale & Machine Learning",
+      "company": "Quora",
+      "focus": "Q&A Scale & Machine Learning",
+      "overview": "In-depth analysis of Quora's system architecture, focusing on Q&A Scale & Machine Learning. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 28,
+      "keyConcepts": [
+        "Q&A Scale & Machine Learning",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Quora Engineering Article",
+          "link": "https://quoraengineering.quora.com/",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Quora System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=d_kX8t34A3g",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-zillow",
+      "title": "Zillow - Real Estate Search Engine",
+      "company": "Zillow",
+      "focus": "Real Estate Search Engine",
+      "overview": "In-depth analysis of Zillow's system architecture, focusing on Real Estate Search Engine. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 29,
+      "keyConcepts": [
+        "Real Estate Search Engine",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Zillow Engineering Article",
+          "link": "https://www.zillow.com/tech/",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Zillow System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=nE9hK8pM12I",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-lyft",
+      "title": "Lyft - Envoy Proxy & Microservices",
+      "company": "Lyft",
+      "focus": "Envoy Proxy & Microservices",
+      "overview": "In-depth analysis of Lyft's system architecture, focusing on Envoy Proxy & Microservices. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 30,
+      "keyConcepts": [
+        "Envoy Proxy & Microservices",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Lyft Engineering Article",
+          "link": "https://eng.lyft.com/",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Lyft System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=qXvFw1pA0Z0",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-paypal",
+      "title": "Paypal - Transactional Integrity",
+      "company": "Paypal",
+      "focus": "Transactional Integrity",
+      "overview": "In-depth analysis of Paypal's system architecture, focusing on Transactional Integrity. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 31,
+      "keyConcepts": [
+        "Transactional Integrity",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Paypal Engineering Article",
+          "link": "https://medium.com/paypal-tech",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Paypal System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=KzK8d2Zl5W8",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-canva",
+      "title": "Canva - Collaborative Design in Browser",
+      "company": "Canva",
+      "focus": "Collaborative Design in Browser",
+      "overview": "In-depth analysis of Canva's system architecture, focusing on Collaborative Design in Browser. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 32,
+      "keyConcepts": [
+        "Collaborative Design in Browser",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Canva Engineering Article",
+          "link": "https://canva.engineering/",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Canva System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=3gA3z1G0P04",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-figma",
+      "title": "Figma - Multiplayer WebGL App",
+      "company": "Figma",
+      "focus": "Multiplayer WebGL App",
+      "overview": "In-depth analysis of Figma's system architecture, focusing on Multiplayer WebGL App. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 33,
+      "keyConcepts": [
+        "Multiplayer WebGL App",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Figma Engineering Article",
+          "link": "https://www.figma.com/blog/how-figmas-multiplayer-technology-works/",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Figma System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=7b3F9W1N5a8",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-cloudflare",
+      "title": "Cloudflare - Edge Computing & CDN",
+      "company": "Cloudflare",
+      "focus": "Edge Computing & CDN",
+      "overview": "In-depth analysis of Cloudflare's system architecture, focusing on Edge Computing & CDN. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 34,
+      "keyConcepts": [
+        "Edge Computing & CDN",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Cloudflare Engineering Article",
+          "link": "https://blog.cloudflare.com/tag/engineering/",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Cloudflare System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=r3P4K8gW4W8",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-patreon",
+      "title": "Patreon - Creator Payments Platform",
+      "company": "Patreon",
+      "focus": "Creator Payments Platform",
+      "overview": "In-depth analysis of Patreon's system architecture, focusing on Creator Payments Platform. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 35,
+      "keyConcepts": [
+        "Creator Payments Platform",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Patreon Engineering Article",
+          "link": "https://blog.patreon.com/engineering",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Patreon System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=Z3k4Z2H7XQ8",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-notion",
+      "title": "Notion - Block-based Data Structure",
+      "company": "Notion",
+      "focus": "Block-based Data Structure",
+      "overview": "In-depth analysis of Notion's system architecture, focusing on Block-based Data Structure. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 36,
+      "keyConcepts": [
+        "Block-based Data Structure",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Notion Engineering Article",
+          "link": "https://www.notion.so/blog/topic/engineering",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Notion System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=4YQ-v0Z2HqM",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-square",
+      "title": "Square - POS and Payment Processing",
+      "company": "Square",
+      "focus": "POS and Payment Processing",
+      "overview": "In-depth analysis of Square's system architecture, focusing on POS and Payment Processing. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 37,
+      "keyConcepts": [
+        "POS and Payment Processing",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Square Engineering Article",
+          "link": "https://developer.squareup.com/blog/",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Square System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=6hX9R-4X-T0",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-datadog",
+      "title": "Datadog - High-Volume Time-Series Data",
+      "company": "Datadog",
+      "focus": "High-Volume Time-Series Data",
+      "overview": "In-depth analysis of Datadog's system architecture, focusing on High-Volume Time-Series Data. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 38,
+      "keyConcepts": [
+        "High-Volume Time-Series Data",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Datadog Engineering Article",
+          "link": "https://www.datadoghq.com/blog/engineering/",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Datadog System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=2T8gK4hX1E8",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-roblox",
+      "title": "Roblox - Global Game Servers & Scale",
+      "company": "Roblox",
+      "focus": "Global Game Servers & Scale",
+      "overview": "In-depth analysis of Roblox's system architecture, focusing on Global Game Servers & Scale. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 39,
+      "keyConcepts": [
+        "Global Game Servers & Scale",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Roblox Engineering Article",
+          "link": "https://blog.roblox.com/category/engineering/",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Roblox System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=z8X3-Hw5K6c",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-kraken",
+      "title": "Kraken - Crypto Exchange Security",
+      "company": "Kraken",
+      "focus": "Crypto Exchange Security",
+      "overview": "In-depth analysis of Kraken's system architecture, focusing on Crypto Exchange Security. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 40,
+      "keyConcepts": [
+        "Crypto Exchange Security",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Kraken Engineering Article",
+          "link": "https://blog.kraken.com/engineering",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Kraken System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=Xz2fX1Yx2a0",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-salesforce",
+      "title": "Salesforce - Multi-Tenant Architecture",
+      "company": "Salesforce",
+      "focus": "Multi-Tenant Architecture",
+      "overview": "In-depth analysis of Salesforce's system architecture, focusing on Multi-Tenant Architecture. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 41,
+      "keyConcepts": [
+        "Multi-Tenant Architecture",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Salesforce Engineering Article",
+          "link": "https://engineering.salesforce.com/",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Salesforce System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=Fj-yZ7P-R6Q",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-soundcloud",
+      "title": "SoundCloud - BFF (Backend for Frontend) Pattern",
+      "company": "SoundCloud",
+      "focus": "BFF (Backend for Frontend) Pattern",
+      "overview": "In-depth analysis of SoundCloud's system architecture, focusing on BFF (Backend for Frontend) Pattern. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 42,
+      "keyConcepts": [
+        "BFF (Backend for Frontend) Pattern",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "SoundCloud Engineering Article",
+          "link": "https://developers.soundcloud.com/blog/",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "SoundCloud System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=3-M9X3T1g7A",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-deliveroo",
+      "title": "Deliveroo - Logistics and Dispatch",
+      "company": "Deliveroo",
+      "focus": "Logistics and Dispatch",
+      "overview": "In-depth analysis of Deliveroo's system architecture, focusing on Logistics and Dispatch. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 43,
+      "keyConcepts": [
+        "Logistics and Dispatch",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Deliveroo Engineering Article",
+          "link": "https://deliveroo.engineering/",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Deliveroo System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=QhJ9-7t2RzI",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-atlassian-jira",
+      "title": "Atlassian (Jira) - Enterprise Workflow Engines",
+      "company": "Atlassian (Jira)",
+      "focus": "Enterprise Workflow Engines",
+      "overview": "In-depth analysis of Atlassian (Jira)'s system architecture, focusing on Enterprise Workflow Engines. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 44,
+      "keyConcepts": [
+        "Enterprise Workflow Engines",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Atlassian (Jira) Engineering Article",
+          "link": "https://blog.developer.atlassian.com/",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Atlassian (Jira) System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=1F_E5Z_B1xU",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-trello",
+      "title": "Trello - Real-time State Updates via Node.js",
+      "company": "Trello",
+      "focus": "Real-time State Updates via Node.js",
+      "overview": "In-depth analysis of Trello's system architecture, focusing on Real-time State Updates via Node.js. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 45,
+      "keyConcepts": [
+        "Real-time State Updates via Node.js",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Trello Engineering Article",
+          "link": "https://blog.trello.com/trello-architecture",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Trello System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=hJ3K1a2V9zM",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-monzo",
+      "title": "Monzo - Banking on Microservices (Go/Cassandra)",
+      "company": "Monzo",
+      "focus": "Banking on Microservices (Go/Cassandra)",
+      "overview": "In-depth analysis of Monzo's system architecture, focusing on Banking on Microservices (Go/Cassandra). Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 46,
+      "keyConcepts": [
+        "Banking on Microservices (Go/Cassandra)",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Monzo Engineering Article",
+          "link": "https://monzo.com/blog/category/engineering",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Monzo System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=U1m4F0WqT9A",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-hulu",
+      "title": "Hulu - Live TV & Streaming Architectures",
+      "company": "Hulu",
+      "focus": "Live TV & Streaming Architectures",
+      "overview": "In-depth analysis of Hulu's system architecture, focusing on Live TV & Streaming Architectures. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 47,
+      "keyConcepts": [
+        "Live TV & Streaming Architectures",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Hulu Engineering Article",
+          "link": "https://medium.com/hulu-tech-blog",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Hulu System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=0kF9M_6Ua8c",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-epic-games",
+      "title": "Epic Games - Scaling Fortnite backend",
+      "company": "Epic Games",
+      "focus": "Scaling Fortnite backend",
+      "overview": "In-depth analysis of Epic Games's system architecture, focusing on Scaling Fortnite backend. Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 48,
+      "keyConcepts": [
+        "Scaling Fortnite backend",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Epic Games Engineering Article",
+          "link": "https://www.unrealengine.com/en-US/tech-blog",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Epic Games System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=4E-g3y_F0jE",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "study-stack-overflow",
+      "title": "Stack Overflow - Monolithic Efficiency (SQL Server/.NET)",
+      "company": "Stack Overflow",
+      "focus": "Monolithic Efficiency (SQL Server/.NET)",
+      "overview": "In-depth analysis of Stack Overflow's system architecture, focusing on Monolithic Efficiency (SQL Server/.NET). Learn about their scaling challenges, architectural decisions, and engineering best practices.",
+      "estimatedMinutes": 40,
+      "difficulty": "Hard",
+      "orderIndex": 49,
+      "keyConcepts": [
+        "Monolithic Efficiency (SQL Server/.NET)",
+        "Scalability",
+        "Engineering Excellence"
+      ],
+      "resources": [
+        {
+          "title": "Stack Overflow Engineering Article",
+          "link": "https://stackexchange.com/performance",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 15
+        },
+        {
+          "title": "Stack Overflow System Design Analysis",
+          "link": "https://www.youtube.com/watch?v=1T4A7b7qE1Q",
+          "type": "video",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "case-study",
+        "industry-leader",
+        "scalability"
+      ],
+      "category": "Top Company Studies",
+      "source": "SystemDesign2.json"
+    }
+  ],
+  "taxonomy": {
+    "companies": [
+      "Airbnb",
+      "Amazon",
+      "Atlassian (Jira)",
+      "Canva",
+      "Cloudflare",
+      "Datadog",
+      "Deliveroo",
+      "Discord",
+      "Dropbox",
+      "Epic Games",
+      "Facebook",
+      "Figma",
+      "GitHub",
+      "Google Maps",
+      "Hulu",
+      "Instagram",
+      "Kraken",
+      "LinkedIn",
+      "Lyft",
+      "Monzo",
+      "Netflix",
+      "Notion",
+      "Patreon",
+      "Paypal",
+      "Pinterest",
+      "Quora",
+      "Reddit",
+      "Robinhood",
+      "Roblox",
+      "Salesforce",
+      "Shopify",
+      "Slack",
+      "Snapchat",
+      "SoundCloud",
+      "Spotify",
+      "Square",
+      "Stack Overflow",
+      "Stripe",
+      "Ticketmaster",
+      "Tinder",
+      "Trello",
+      "Twilio",
+      "Twitter",
+      "Uber",
+      "Uber Eats",
+      "WhatsApp",
+      "Yelp",
+      "YouTube",
+      "Zillow",
+      "Zoom"
+    ],
+    "focuses": [
+      "Audio Streaming & Content Discovery",
+      "BFF (Backend for Frontend) Pattern",
+      "Banking on Microservices (Go/Cassandra)",
+      "Block-based Data Structure",
+      "Collaborative Design in Browser",
+      "Creator Payments Platform",
+      "Crypto Exchange Security",
+      "E-commerce & DynamoDB",
+      "Edge Computing & CDN",
+      "Enterprise Workflow Engines",
+      "Envoy Proxy & Microservices",
+      "Ephemeral Storage & Google App Engine",
+      "File Synchronization",
+      "Four-sided Marketplace",
+      "Geospatial Matching & Swipes",
+      "Git Replication & Storage",
+      "Global CDN (Open Connect) & Microservices",
+      "Global Game Servers & Scale",
+      "Graph Algorithms & Spatial DB",
+      "Graph Queries & Kafka Origins",
+      "High Concurrency Bookings",
+      "High Read-Throughput & Fanout",
+      "High-Volume Time-Series Data",
+      "Image Processing & Sharding",
+      "Live TV & Streaming Architectures",
+      "Logistics and Dispatch",
+      "Low Latency Messaging & Scale",
+      "Monolithic Efficiency (SQL Server/.NET)",
+      "Multi-Tenant Architecture",
+      "Multi-tenant E-commerce",
+      "Multiplayer WebGL App",
+      "Newsfeed & Social Graph",
+      "POS and Payment Processing",
+      "Payment Gateway Consistency",
+      "Photo Storage & Feed Generation",
+      "Proximity Search & Reviews",
+      "Q&A Scale & Machine Learning",
+      "Real Estate Search Engine",
+      "Real-time Collaboration",
+      "Real-time Geospatial Dispatch",
+      "Real-time State & WebSockets",
+      "Real-time State Updates via Node.js",
+      "Scaling Fortnite backend",
+      "Search & Booking Consistency",
+      "Telephony & High Availability",
+      "Trading & ACID Transactions",
+      "Transactional Integrity",
+      "Tree structures & Caching",
+      "Video Conferencing & WebRTC",
+      "Video Transcoding & Storage"
+    ],
+    "difficulties": [
+      "Medium",
+      "Hard"
+    ],
+    "categories": [
+      "Top Company Studies"
+    ]
+  }
+}

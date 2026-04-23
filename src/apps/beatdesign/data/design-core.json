@@ -1,0 +1,1112 @@
+{
+  "metadata": {
+    "title": "System Design Core Concepts",
+    "description": "Comprehensive core concepts merged from multiple expert sources with depth-tagged resources",
+    "totalConcepts": 22,
+    "sources": [
+      "systemDesign.json",
+      "SystemDesign2.json"
+    ],
+    "lastUpdated": "2026-04-23",
+    "version": "1.0.0"
+  },
+  "concepts": [
+    {
+      "id": "concept-scalability",
+      "title": "Scalability",
+      "description": "Scalability is a system’s ability to handle growing load by expanding resources.  Architecting for scalability often means horizontal scaling (adding more machines) and designing stateless/microservices components to handle higher traffic.  Cloud-native designs use elastic load balancers, CDNs, and caching to meet demand spikes with minimal performance degradation.",
+      "estimatedMinutes": 90,
+      "difficulty": "Beginner",
+      "category": "Core Fundamentals",
+      "orderIndex": 0,
+      "resources": [
+        {
+          "title": "Architecting for Reliable Scalability (AWS Blog)",
+          "link": "https://aws.amazon.com/blogs/architecture/architecting-for-reliable-scalability/",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Horizontal vs. Vertical Scaling (YouTube)",
+          "link": "https://www.youtube.com/watch?v=xpDnVSmNFX0",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        },
+        {
+          "title": "Vertical vs Horizontal Scaling (CockroachDB Blog)",
+          "link": "https://www.cockroachlabs.com/blog/vertical-scaling-vs-horizontal-scaling/",
+          "type": "article",
+          "depth": "deep-dive",
+          "estimatedMinutes": 12
+        }
+      ],
+      "tags": [
+        "core",
+        "foundational",
+        "system-design"
+      ],
+      "prerequisites": [],
+      "relatedConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "concept-load-balancing",
+      "title": "Load Balancing",
+      "description": "Load balancing distributes client requests across multiple servers to optimize resource usage, maximize throughput, and prevent any single machine from being overloaded.  For example, an application may use multiple web servers behind an L4 (network-level) or L7 (application-level) load balancer to handle large request volumes, automatically routing traffic away from failed instances. Enhanced with additional resources and perspectives.",
+      "estimatedMinutes": 60,
+      "difficulty": "Beginner",
+      "category": "Core Fundamentals",
+      "orderIndex": 1,
+      "resources": [
+        {
+          "title": "Azure Load Balancer Documentation",
+          "link": "https://learn.microsoft.com/azure/load-balancer/load-balancer-overview",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Load Balancer System Design (YouTube)",
+          "link": "https://www.youtube.com/watch?v=W7njODx1D8I",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        },
+        {
+          "title": "Nginx Load Balancing (NGINX Docs)",
+          "link": "https://www.nginx.com/learn/load-balancing/",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "NGINX Guide",
+          "link": "https://www.nginx.com/resources/glossary/load-balancing/",
+          "type": "article",
+          "depth": "deep-dive",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Article 2",
+          "link": "https://aws.amazon.com/what-is/load-balancing/",
+          "type": "article",
+          "depth": "deep-dive",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Gaurav Sen",
+          "link": "https://www.youtube.com/watch?v=K0Ta65OqQkY",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        },
+        {
+          "title": "Tech Dummies",
+          "link": "https://www.youtube.com/watch?v=sI91aH-e2tI",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        }
+      ],
+      "tags": [
+        "core",
+        "foundational",
+        "system-design",
+        "merged",
+        "comprehensive"
+      ],
+      "prerequisites": [],
+      "relatedConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "concept-caching",
+      "title": "Caching",
+      "description": "Caching stores frequently accessed data in fast memory (e.g. Redis, Memcached) to reduce load on the database and improve response time.  Using a cache layer can dramatically speed up read-heavy workloads (e.g. serving hot user sessions or product data) and lower latency.  For example, web applications often cache database query results or session objects in distributed in-memory stores to avoid repeated expensive lookups. Enhanced with additional resources and perspectives.",
+      "estimatedMinutes": 60,
+      "difficulty": "Beginner",
+      "category": "Core Fundamentals",
+      "orderIndex": 2,
+      "resources": [
+        {
+          "title": "What is Caching and How it Works (AWS Whitepaper)",
+          "link": "https://aws.amazon.com/caching/",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Intro to Caching (YouTube)",
+          "link": "https://www.youtube.com/watch?v=0DL6HAPgpl4",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        },
+        {
+          "title": "Caching (GeeksforGeeks)",
+          "link": "https://www.geeksforgeeks.org/caching-in-computer-architecture/",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Article 1",
+          "link": "https://aws.amazon.com/caching/",
+          "type": "article",
+          "depth": "deep-dive",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Redis Documentation",
+          "link": "https://redis.io/docs/about/architecture/",
+          "type": "article",
+          "depth": "deep-dive",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "ByteByteGo",
+          "link": "https://www.youtube.com/watch?v=U3RkDLtS7uY",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        },
+        {
+          "title": "System Design Interview",
+          "link": "https://www.youtube.com/watch?v=iuqZineb8z0",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        }
+      ],
+      "tags": [
+        "core",
+        "foundational",
+        "system-design",
+        "merged",
+        "comprehensive"
+      ],
+      "prerequisites": [],
+      "relatedConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "concept-content-delivery-networks-cdns",
+      "title": "Content Delivery Networks (CDNs)",
+      "description": "A CDN is a geographically distributed network of proxy servers that caches content (like images, scripts, video) closer to end users, reducing latency and offloading origin servers.  CDNs improve load times by serving content from the nearest edge server.  For example, a static image or video asset is replicated to edge nodes around the world so users download it from a local cache, accelerating delivery. Enhanced with additional resources and perspectives.",
+      "estimatedMinutes": 60,
+      "difficulty": "Beginner",
+      "category": "Core Fundamentals",
+      "orderIndex": 3,
+      "resources": [
+        {
+          "title": "What is a CDN? (Cloudflare)",
+          "link": "https://www.cloudflare.com/learning/cdn/what-is-a-cdn/",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Introduction to CDNs (YouTube)",
+          "link": "https://www.youtube.com/watch?v=6PsjplY23PE",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        },
+        {
+          "title": "CDN Basics (GeeksforGeeks)",
+          "link": "https://www.geeksforgeeks.org/content-delivery-network-cdn/",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Article 1",
+          "link": "https://www.cloudflare.com/learning/cdn/what-is-a-cdn/",
+          "type": "article",
+          "depth": "deep-dive",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Article 2",
+          "link": "https://www.akamai.com/our-thinking/cdn/what-is-a-cdn",
+          "type": "article",
+          "depth": "deep-dive",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "ByteByteGo",
+          "link": "https://www.youtube.com/watch?v=8zX0RSOGEYw",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        },
+        {
+          "title": "Gaurav Sen",
+          "link": "https://www.youtube.com/watch?v=RI9_hXkH210",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        }
+      ],
+      "tags": [
+        "core",
+        "foundational",
+        "system-design",
+        "merged",
+        "comprehensive"
+      ],
+      "prerequisites": [],
+      "relatedConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "concept-databases-sql-vs-nosql",
+      "title": "Databases (SQL vs NoSQL)",
+      "description": "Database selection and design are core to system design. Relational (SQL) databases use fixed schemas and ACID transactions, suitable for structured data and strict consistency; they generally scale vertically (bigger machines). NoSQL databases (key-value, document, columnar) are schema-flexible and horizontally scalable, often providing high availability and eventual consistency (BASE) to handle massive data. The choice affects sharding, indexing, and consistency models. Enhanced with additional resources and perspectives.",
+      "estimatedMinutes": 120,
+      "difficulty": "Beginner",
+      "category": "Core Fundamentals",
+      "orderIndex": 4,
+      "resources": [
+        {
+          "title": "SQL vs NoSQL Databases (IBM Cloud Education)",
+          "link": "https://www.ibm.com/topics/nosql-vs-sql",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Introduction to Databases (YouTube)",
+          "link": "https://www.youtube.com/watch?v=HXV3zeQKqGY",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        },
+        {
+          "title": "ACID vs BASE (GeeksforGeeks)",
+          "link": "https://www.geeksforgeeks.org/acid-vs-base/",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Article 1",
+          "link": "https://www.digitalocean.com/community/tutorials/understanding-database-sharding",
+          "type": "article",
+          "depth": "deep-dive",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Article 2",
+          "link": "https://medium.com/@jeeyoungk/how-sharding-works-b4dec46b3f6",
+          "type": "article",
+          "depth": "deep-dive",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Gaurav Sen",
+          "link": "https://www.youtube.com/watch?v=5faMjKuB9bc",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        },
+        {
+          "title": "Hussein Nasser",
+          "link": "https://www.youtube.com/watch?v=JgFFh1OPyRw",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        }
+      ],
+      "tags": [
+        "core",
+        "foundational",
+        "system-design",
+        "merged",
+        "comprehensive"
+      ],
+      "prerequisites": [],
+      "relatedConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "concept-cap-theorem-consistency-models",
+      "title": "CAP Theorem & Consistency Models",
+      "description": "The CAP theorem states that in a distributed system you can guarantee only two of Consistency, Availability, and Partition Tolerance simultaneously.  In practice, systems often trade strict consistency for availability under partition (favoring eventual consistency).  For example, many NoSQL stores sacrifice C for P to remain available when nodes fail. Understanding CAP guides how we handle data replication and consistency (strong vs eventual). Enhanced with additional resources and perspectives.",
+      "estimatedMinutes": 60,
+      "difficulty": "Beginner",
+      "category": "Core Fundamentals",
+      "orderIndex": 5,
+      "resources": [
+        {
+          "title": "CAP Theorem Explained (IBM Developer)",
+          "link": "https://developer.ibm.com/articles/cc-cap-theorem/",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "CAP Theorem (YouTube)",
+          "link": "https://www.youtube.com/watch?v=k-Yaq8AHlFA",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        },
+        {
+          "title": "Strong vs Eventual Consistency (Medium)",
+          "link": "https://medium.com/swlh/strong-eventual-consistency-explained-198c4b76b13f",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Article 1",
+          "link": "https://robertgreiner.com/cap-theorem-revisited/",
+          "type": "article",
+          "depth": "deep-dive",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "IBM Cloud Guide",
+          "link": "https://www.ibm.com/cloud/learn/cap-theorem",
+          "type": "article",
+          "depth": "deep-dive",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "ByteByteGo",
+          "link": "https://www.youtube.com/watch?v=k-Yaq8AHlFA",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        },
+        {
+          "title": "Gaurav Sen",
+          "link": "https://www.youtube.com/watch?v=BHqjEjzAicA",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        }
+      ],
+      "tags": [
+        "core",
+        "foundational",
+        "system-design",
+        "merged",
+        "comprehensive"
+      ],
+      "prerequisites": [],
+      "relatedConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "concept-replication",
+      "title": "Replication",
+      "description": "Replication copies data across multiple machines for reliability and read-scalability.  By maintaining replicas (e.g. master-slave or multi-master), a system can continue serving reads if one node fails and improve read throughput.  For example, a database might replicate writes to multiple data centers for high availability and use read replicas to scale query load.  Replication ensures fault tolerance and can reduce latency via geo-replicas.",
+      "estimatedMinutes": 60,
+      "difficulty": "Beginner",
+      "category": "Core Fundamentals",
+      "orderIndex": 6,
+      "resources": [
+        {
+          "title": "Database Replication (GeeksforGeeks)",
+          "link": "https://www.geeksforgeeks.org/database-replication/",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Introduction to Replication (YouTube)",
+          "link": "https://www.youtube.com/watch?v=8I8uW2-qePQ",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        },
+        {
+          "title": "Replication in Distributed Systems (StackOverflow Insights)",
+          "link": "https://stackoverflow.blog/2016/08/how-does-replication-in-hadoop-database-work/",
+          "type": "article",
+          "depth": "deep-dive",
+          "estimatedMinutes": 12
+        }
+      ],
+      "tags": [
+        "core",
+        "foundational",
+        "system-design"
+      ],
+      "prerequisites": [],
+      "relatedConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "concept-sharding-partitioning",
+      "title": "Sharding (Partitioning)",
+      "description": "Sharding splits large data sets horizontally across multiple database instances (shards) to scale beyond a single server's capacity.  Each shard holds a subset of the data (often by key or geography).  For instance, a user database might shard by user ID range so queries/transactions for different users go to different servers.  Sharding enables parallelism and is vital for very large datasets.",
+      "estimatedMinutes": 60,
+      "difficulty": "Intermediate",
+      "category": "Core Fundamentals",
+      "orderIndex": 7,
+      "resources": [
+        {
+          "title": "Database Sharding (AWS Blog)",
+          "link": "https://aws.amazon.com/blogs/database/database-sharding-explained/",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Sharding Explained (YouTube)",
+          "link": "https://www.youtube.com/watch?v=sLkvSLta_Hk",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        },
+        {
+          "title": "Partitioning vs Sharding (CockroachDB Blog)",
+          "link": "https://www.cockroachlabs.com/blog/partitioning-vs-sharding/",
+          "type": "article",
+          "depth": "deep-dive",
+          "estimatedMinutes": 12
+        }
+      ],
+      "tags": [
+        "core",
+        "foundational",
+        "system-design"
+      ],
+      "prerequisites": [],
+      "relatedConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "concept-indexing",
+      "title": "Indexing",
+      "description": "Indexes in databases provide fast lookup of records by maintaining a separate data structure (like a B-tree) that maps keys to row locations.  Without an index, queries must scan entire tables; with an index, the DB can quickly find rows matching a key. For example, indexing on a 'user_id' column allows O(log n) searches rather than full table scans. However, indexes increase write costs, so they must be judiciously chosen.",
+      "estimatedMinutes": 60,
+      "difficulty": "Intermediate",
+      "category": "Core Fundamentals",
+      "orderIndex": 8,
+      "resources": [
+        {
+          "title": "Database Indexing (GeeksforGeeks)",
+          "link": "https://www.geeksforgeeks.org/introduction-of-indexing-in-dbms/",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "How Indexes Work (YouTube)",
+          "link": "https://www.youtube.com/watch?v=MnnG8Skc84c",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        },
+        {
+          "title": "B-tree Indexes (Database Internals)",
+          "link": "https://www.cockroachlabs.com/blog/what-are-database-indexes/",
+          "type": "article",
+          "depth": "deep-dive",
+          "estimatedMinutes": 12
+        }
+      ],
+      "tags": [
+        "core",
+        "foundational",
+        "system-design"
+      ],
+      "prerequisites": [],
+      "relatedConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "concept-message-queues",
+      "title": "Message Queues",
+      "description": "Message queues (e.g. RabbitMQ, AWS SQS, Kafka) enable asynchronous processing by decoupling producers and consumers.  Producers place messages on a queue, and consumers process them at their own pace. This improves resilience (messages are retried until processed) and scalability (work can be distributed across multiple consumers). It also smooths traffic spikes by buffering requests between services. Enhanced with additional resources and perspectives.",
+      "estimatedMinutes": 60,
+      "difficulty": "Intermediate",
+      "category": "Core Fundamentals",
+      "orderIndex": 9,
+      "resources": [
+        {
+          "title": "Message Queue (GeeksforGeeks)",
+          "link": "https://www.geeksforgeeks.org/introduction-of-message-queue/",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Introduction to Message Queues (YouTube)",
+          "link": "https://www.youtube.com/watch?v=fW32daey0Iw",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        },
+        {
+          "title": "Using Message Queues (AWS SQS Docs)",
+          "link": "https://aws.amazon.com/sqs/",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Article 1",
+          "link": "https://aws.amazon.com/message-queue/",
+          "type": "article",
+          "depth": "deep-dive",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Article 2",
+          "link": "https://www.confluent.io/blog/apache-kafka-vs-rabbitmq/",
+          "type": "article",
+          "depth": "deep-dive",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Gaurav Sen",
+          "link": "https://www.youtube.com/watch?v=oUJbuFMyBDk",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        },
+        {
+          "title": "ByteByteGo",
+          "link": "https://www.youtube.com/watch?v=vJqcbeURNeM",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        }
+      ],
+      "tags": [
+        "core",
+        "foundational",
+        "system-design",
+        "merged",
+        "comprehensive"
+      ],
+      "prerequisites": [],
+      "relatedConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "concept-publishsubscribe-pubsub",
+      "title": "Publish/Subscribe (Pub/Sub)",
+      "description": "Pub/Sub systems (e.g. Kafka topics, Google Pub/Sub) deliver messages from publishers to all subscribed consumers.  Unlike a single-queue model, pub/sub fans out each message to multiple subscribers.  For example, a log-in event might be published to a topic so that multiple services (analytics, notification, logging) each receive it. This supports scalable event-driven and broadcast architectures.",
+      "estimatedMinutes": 60,
+      "difficulty": "Intermediate",
+      "category": "Core Fundamentals",
+      "orderIndex": 10,
+      "resources": [
+        {
+          "title": "Introduction to Pub/Sub (GeeksforGeeks)",
+          "link": "https://www.geeksforgeeks.org/pub-sub-pattern-implementation-java-using-rabbitmq/",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Kafka Basics (YouTube)",
+          "link": "https://www.youtube.com/watch?v=0qLzgRVDBs0",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        },
+        {
+          "title": "Google Pub/Sub Docs",
+          "link": "https://cloud.google.com/pubsub/docs/overview",
+          "type": "official doc",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "core",
+        "foundational",
+        "system-design"
+      ],
+      "prerequisites": [],
+      "relatedConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "concept-rate-limiting",
+      "title": "Rate Limiting",
+      "description": "Rate limiting throttles client requests (e.g. X requests per minute per user) to prevent abuse or overload.  Common algorithms include fixed windows, sliding logs, or token/leaky bucket algorithms, often implemented with Redis or in-network proxies. For example, an API gateway might allow only 100 calls/min from a given IP by using a token bucket in Redis to track credits.",
+      "estimatedMinutes": 60,
+      "difficulty": "Intermediate",
+      "category": "Core Fundamentals",
+      "orderIndex": 11,
+      "resources": [
+        {
+          "title": "Rate Limiting with Redis (Envoy Tutorial)",
+          "link": "https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/other_features/rate_limiting",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Design a Rate Limiter (YouTube)",
+          "link": "https://www.youtube.com/watch?v=NJYDLqAkSik",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        },
+        {
+          "title": "Rate Limiting Algorithms (Tutorial)",
+          "link": "https://cloud.google.com/apis/design/rate-limiting",
+          "type": "article",
+          "depth": "deep-dive",
+          "estimatedMinutes": 12
+        }
+      ],
+      "tags": [
+        "core",
+        "foundational",
+        "system-design"
+      ],
+      "prerequisites": [],
+      "relatedConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "concept-microservices-architecture",
+      "title": "Microservices Architecture",
+      "description": "Microservices break a monolith into independently deployable services, each responsible for a single business capability.  Microservices allow teams to scale, develop, and deploy services independently.  For example, Spotify runs separate services for authentication, streaming, and playlists, each with its own data store. Communication is via lightweight APIs or messaging, often orchestrated through an API gateway.",
+      "estimatedMinutes": 120,
+      "difficulty": "Intermediate",
+      "category": "Core Fundamentals",
+      "orderIndex": 12,
+      "resources": [
+        {
+          "title": "Microservices Introduction (IBM Developer)",
+          "link": "https://developer.ibm.com/articles/microservices-introduction/",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Microservices Architecture (YouTube)",
+          "link": "https://www.youtube.com/watch?v=CZ3wIuvmHeM",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        },
+        {
+          "title": "Microservices at Netflix",
+          "link": "https://netflixtechblog.com/microservices-at-netflix-550d3f9a4e68",
+          "type": "blog",
+          "depth": "deep-dive",
+          "estimatedMinutes": 10
+        }
+      ],
+      "tags": [
+        "core",
+        "foundational",
+        "system-design"
+      ],
+      "prerequisites": [],
+      "relatedConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "concept-service-discovery",
+      "title": "Service Discovery",
+      "description": "Service discovery lets microservices find each other via a registry (e.g. Consul, Eureka).  Each service registers its host/port with the registry, and clients query it to locate service instances dynamically.  This decouples direct IP addresses and enables autoscaling.  For example, Netflix Eureka or Kubernetes DNS can be used so that when a new instance starts, it registers itself and becomes discoverable to others.",
+      "estimatedMinutes": 60,
+      "difficulty": "Intermediate",
+      "category": "Core Fundamentals",
+      "orderIndex": 13,
+      "resources": [
+        {
+          "title": "What is Service Discovery? (Baeldung)",
+          "link": "https://www.baeldung.com/service-discovery-pattern",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Service Discovery with Consul (YouTube)",
+          "link": "https://www.youtube.com/watch?v=jYTKTv3ylxA",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        },
+        {
+          "title": "Kubernetes Service Discovery",
+          "link": "https://kubernetes.io/docs/concepts/services-networking/service/#discovering-services",
+          "type": "official doc",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "core",
+        "foundational",
+        "system-design"
+      ],
+      "prerequisites": [],
+      "relatedConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "concept-monitoring-observability",
+      "title": "Monitoring & Observability",
+      "description": "Monitoring and observability are crucial for reliable systems.  Observability uses metrics, logs, and traces (the “three pillars”) to infer a system’s internal state.  Metrics (CPU, latency) show system health; logs record events; distributed traces track request flows across services.  Together they enable detecting anomalies and debugging issues without invasive changes.",
+      "estimatedMinutes": 60,
+      "difficulty": "Advanced",
+      "category": "Core Fundamentals",
+      "orderIndex": 14,
+      "resources": [
+        {
+          "title": "What is Observability? (IBM Developer)",
+          "link": "https://developer.ibm.com/articles/what-is-observability/",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Observability (YouTube)",
+          "link": "https://www.youtube.com/watch?v=wrSYDD5S9_Q",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        },
+        {
+          "title": "Prometheus & OpenTelemetry Docs",
+          "link": "https://prometheus.io/docs/introduction/overview/",
+          "type": "official doc",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "core",
+        "foundational",
+        "system-design"
+      ],
+      "prerequisites": [],
+      "relatedConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "concept-distributed-tracing",
+      "title": "Distributed Tracing",
+      "description": "Distributed tracing records the path of a request across multiple microservices, measuring latency at each step.  It creates traces composed of spans for each service call.  For example, using OpenTelemetry or Zipkin, a trace ID is propagated so you can see a user request’s end-to-end flow and pinpoint slow components.  Tracing is often tied with monitoring and critical for debugging performance issues in microservices.",
+      "estimatedMinutes": 60,
+      "difficulty": "Advanced",
+      "category": "Core Fundamentals",
+      "orderIndex": 15,
+      "resources": [
+        {
+          "title": "Introduction to Distributed Tracing (GeeksforGeeks)",
+          "link": "https://www.geeksforgeeks.org/distributed-tracing/",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "OpenTelemetry Tutorial (YouTube)",
+          "link": "https://www.youtube.com/watch?v=V5cVtxnPGc0",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        },
+        {
+          "title": "Zipkin Documentation",
+          "link": "https://zipkin.io/pages/architecture.html",
+          "type": "official doc",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "core",
+        "foundational",
+        "system-design"
+      ],
+      "prerequisites": [],
+      "relatedConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "concept-security",
+      "title": "Security",
+      "description": "Security involves protecting data and access.  In system design, always encrypt data in transit (TLS) and at rest.  Use robust authentication/authorization (e.g. OAuth2, JWT tokens).  For example, APIs should require HTTPS, and user identities might be managed via OAuth2/OpenID Connect so services need not store passwords directly.  Also design to handle threats (rate-limit abusive requests, validate inputs).",
+      "estimatedMinutes": 60,
+      "difficulty": "Advanced",
+      "category": "Core Fundamentals",
+      "orderIndex": 16,
+      "resources": [
+        {
+          "title": "API Security Best Practices (StackOverflow Blog)",
+          "link": "https://stackoverflow.blog/2020/03/31/secure-your-rest-api-design/",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Secure APIs (YouTube)",
+          "link": "https://www.youtube.com/watch?v=MtjNqI7GiJI",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        },
+        {
+          "title": "OAuth 2.0 Tutorial (Okta Docs)",
+          "link": "https://developer.okta.com/docs/guides/implement-oauth-for-okta/overview/",
+          "type": "official doc",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "core",
+        "foundational",
+        "system-design"
+      ],
+      "prerequisites": [],
+      "relatedConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "concept-idempotency",
+      "title": "Idempotency",
+      "description": "Idempotency means that repeating an operation (e.g. retrying a request) has the same effect as doing it once.  This is crucial for retries in distributed systems.  For example, using unique request IDs or client tokens, a POST can be made idempotent: if a retry with the same token arrives, the server realizes it already applied the change.  Idempotent design prevents duplicate actions on retries.",
+      "estimatedMinutes": 45,
+      "difficulty": "Advanced",
+      "category": "Core Fundamentals",
+      "orderIndex": 17,
+      "resources": [
+        {
+          "title": "Idempotency in APIs (Stripe Engineering Blog)",
+          "link": "https://stripe.com/blog/idempotency",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Idempotent Request Tutorial (YouTube)",
+          "link": "https://www.youtube.com/watch?v=JROoLQHisJw",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        },
+        {
+          "title": "AWS API Idempotency Docs",
+          "link": "https://aws.amazon.com/blogs/compute/using-idempotency-tokens-for-safe-aws-operations/",
+          "type": "article",
+          "depth": "deep-dive",
+          "estimatedMinutes": 12
+        }
+      ],
+      "tags": [
+        "core",
+        "foundational",
+        "system-design"
+      ],
+      "prerequisites": [],
+      "relatedConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "concept-transactions-acid-vs-base",
+      "title": "Transactions (ACID vs BASE)",
+      "description": "Transactions group multiple operations into an atomic action.  Traditional RDBMS enforce ACID properties (Atomicity, Consistency, Isolation, Durability) for reliability.  However, distributed systems often adopt a BASE model (Basically Available, Soft-state, Eventual consistency) to achieve partition tolerance.  For example, a bank transfer in an RDBMS is ACID; a large-scale shopping cart checkout may allow eventual consistency between inventory systems for better availability.",
+      "estimatedMinutes": 60,
+      "difficulty": "Advanced",
+      "category": "Core Fundamentals",
+      "orderIndex": 18,
+      "resources": [
+        {
+          "title": "ACID Transactions (GeeksforGeeks)",
+          "link": "https://www.geeksforgeeks.org/acid-properties-in-dbms/",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "BASE vs ACID (YouTube)",
+          "link": "https://www.youtube.com/watch?v=aWyGtYokZj8",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        },
+        {
+          "title": "Distributed Transactions (IBM Cloud)",
+          "link": "https://developer.ibm.com/articles/using-microservices-architecture-patterns-of-microservices/",
+          "type": "article",
+          "depth": "deep-dive",
+          "estimatedMinutes": 12
+        }
+      ],
+      "tags": [
+        "core",
+        "foundational",
+        "system-design"
+      ],
+      "prerequisites": [],
+      "relatedConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "concept-consensus-algorithms-paxos-raft",
+      "title": "Consensus Algorithms (Paxos, Raft)",
+      "description": "Consensus protocols ensure a majority of nodes agree on a value, even with failures.  Algorithms like Paxos or Raft are used for leader election and consistent replication of logs across nodes.  For example, Zookeeper uses Zab (a variant of Paxos) to manage distributed locks, and etcd uses Raft for leader election.  These guarantee consistency in systems that require a single source of truth.",
+      "estimatedMinutes": 120,
+      "difficulty": "Advanced",
+      "category": "Core Fundamentals",
+      "orderIndex": 19,
+      "resources": [
+        {
+          "title": "Consensus Explained (GeeksforGeeks)",
+          "link": "https://www.geeksforgeeks.org/consensus-in-distributed-systems/",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Raft Consensus (YouTube)",
+          "link": "https://www.youtube.com/watch?v=YXB_RNuy8vM",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        },
+        {
+          "title": "Paxos Made Simple (Leslie Lamport)",
+          "link": "https://lamport.azurewebsites.net/pubs/paxos-simple.pdf",
+          "type": "paper",
+          "depth": "deep-dive",
+          "estimatedMinutes": 45
+        }
+      ],
+      "tags": [
+        "core",
+        "foundational",
+        "system-design"
+      ],
+      "prerequisites": [],
+      "relatedConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "concept-consistent-hashing",
+      "title": "Consistent Hashing",
+      "description": "A distributed hashing scheme that operates independently of the number of servers or objects.",
+      "estimatedMinutes": 75,
+      "difficulty": "Intermediate",
+      "category": "Advanced Concepts",
+      "orderIndex": 20,
+      "resources": [
+        {
+          "title": "Article 1",
+          "link": "https://www.toptal.com/big-data/consistent-hashing",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Article 2",
+          "link": "https://systemdesignprimer.com/consistent-hashing/",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "ByteByteGo",
+          "link": "https://www.youtube.com/watch?v=ZA-tUxOSIGc",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        },
+        {
+          "title": "Gaurav Sen",
+          "link": "https://www.youtube.com/watch?v=zaRkONvyGr8",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        }
+      ],
+      "tags": [
+        "core",
+        "system-design",
+        "advanced"
+      ],
+      "prerequisites": [],
+      "relatedConcepts": [],
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "concept-api-gateways",
+      "title": "API Gateways",
+      "description": "An API management tool that sits between a client and a collection of backend services.",
+      "estimatedMinutes": 75,
+      "difficulty": "Intermediate",
+      "category": "Advanced Concepts",
+      "orderIndex": 21,
+      "resources": [
+        {
+          "title": "Article 1",
+          "link": "https://www.redhat.com/en/topics/api/what-does-an-api-gateway-do",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Article 2",
+          "link": "https://microservices.io/patterns/apigateway.html",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "IBM Technology",
+          "link": "https://www.youtube.com/watch?v=1vqqAEbOHhI",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        },
+        {
+          "title": "Hussein Nasser",
+          "link": "https://www.youtube.com/watch?v=hGhbxsOzYqU",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        }
+      ],
+      "tags": [
+        "core",
+        "system-design",
+        "advanced"
+      ],
+      "prerequisites": [],
+      "relatedConcepts": [],
+      "source": "SystemDesign2.json"
+    }
+  ],
+  "taxonomy": {
+    "difficulties": [
+      "Beginner",
+      "Intermediate",
+      "Advanced"
+    ],
+    "categories": [
+      "Core Fundamentals",
+      "Advanced Concepts"
+    ],
+    "tags": [
+      "core",
+      "foundational",
+      "system-design",
+      "merged",
+      "comprehensive",
+      "advanced"
+    ],
+    "resourceDepths": {
+      "just-enough": "Quick overview and essential understanding - videos, introductory articles",
+      "deep-dive": "Comprehensive study and mastery-level content - courses, detailed guides, papers"
+    }
+  }
+}

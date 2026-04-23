@@ -1,0 +1,1350 @@
+{
+  "metadata": {
+    "title": "System Design Interview Questions",
+    "description": "Curated interview questions with solutions, resources, and expert insights",
+    "totalQuestions": 34,
+    "sources": [
+      "systemDesign.json",
+      "SystemDesign2.json"
+    ],
+    "lastUpdated": "2026-04-23",
+    "version": "1.0.0"
+  },
+  "questions": [
+    {
+      "id": "question-a-url-shortener",
+      "title": "Design a URL Shortener (e.g. tinyurl/bitly)",
+      "prompt": "Design a URL Shortener (e.g. tinyurl/bitly)",
+      "difficulty": "Easy",
+      "estimatedMinutes": 30,
+      "orderIndex": 0,
+      "constraints": {
+        "text": "Scale to ~1 billion short URLs; ~100M DAU; high read/write ratio (~1000:1)",
+        "metrics": {
+          "dau": "100M",
+          "ratio": "1000:1"
+        }
+      },
+      "coreTopics": [
+        "System Design",
+        "Scalability",
+        "Architecture"
+      ],
+      "resources": [
+        {
+          "title": "Design URL Shortener (HelloInterview)",
+          "link": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/bit.ly",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "System Design: URL Shortener (Medium)",
+          "link": "https://medium.com/javarevisited/system-design-url-shortener-like-bitly-79f5adc4d7e0",
+          "type": "article",
+          "depth": "deep-dive",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Design TinyURL (LeetCode Discuss)",
+          "link": "https://leetcode.com/discuss/interview-question/other/250340/System-Design-URL-Shortener",
+          "type": "discussion",
+          "depth": "deep-dive",
+          "estimatedMinutes": 8
+        }
+      ],
+      "tags": [
+        "interview",
+        "system-design",
+        "practice"
+      ],
+      "category": "System Design Interview",
+      "requiredConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "question-a-file-storage",
+      "title": "Design a File Storage Service (Google Drive / Dropbox)",
+      "prompt": "Design a File Storage Service (Google Drive / Dropbox)",
+      "difficulty": "Medium",
+      "estimatedMinutes": 45,
+      "orderIndex": 1,
+      "constraints": {
+        "text": "Support large files (up to ~50GB); automatic sync across devices; high availability (eventual consistency acceptable).",
+        "metrics": {
+          "storage": "50GB"
+        }
+      },
+      "coreTopics": [
+        "System Design",
+        "Scalability",
+        "Architecture"
+      ],
+      "resources": [
+        {
+          "title": "Design Dropbox (HelloInterview)",
+          "link": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/dropbox",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Google Drive Architecture (Tech Blog)",
+          "link": "https://paper.dropbox.com/doc/Dropbox-Architecture-Guide-eWzLVNpDzcYupg2T12zX9",
+          "type": "article",
+          "depth": "deep-dive",
+          "estimatedMinutes": 12
+        }
+      ],
+      "tags": [
+        "interview",
+        "system-design",
+        "practice"
+      ],
+      "category": "System Design Interview",
+      "requiredConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "question-a-rate-limiter",
+      "title": "Design a Rate Limiter",
+      "prompt": "Design a Rate Limiter",
+      "difficulty": "Medium",
+      "estimatedMinutes": 45,
+      "orderIndex": 2,
+      "constraints": {
+        "text": "Limit X requests per time window per user/IP; durable counter store (e.g. Redis).",
+        "metrics": {}
+      },
+      "coreTopics": [
+        "System Design",
+        "Scalability",
+        "Architecture"
+      ],
+      "resources": [
+        {
+          "title": "Rate Limiter (LeetCode Discuss)",
+          "link": "https://leetcode.com/discuss/interview-question/6144179/System-Design-Questions-with-Brief-Answers/",
+          "type": "discussion",
+          "depth": "just-enough",
+          "estimatedMinutes": 8
+        },
+        {
+          "title": "Token Bucket Algorithm (GeeksforGeeks)",
+          "link": "https://www.geeksforgeeks.org/leaky-bucket-algorithm/",
+          "type": "article",
+          "depth": "deep-dive",
+          "estimatedMinutes": 12
+        }
+      ],
+      "tags": [
+        "interview",
+        "system-design",
+        "practice"
+      ],
+      "category": "System Design Interview",
+      "requiredConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "question-an-e-commerce-checkout",
+      "title": "Design an E-commerce Checkout System",
+      "prompt": "Design an E-commerce Checkout System",
+      "difficulty": "Medium",
+      "estimatedMinutes": 45,
+      "orderIndex": 3,
+      "constraints": {
+        "text": "Transactional order processing; integrate payment gateway; maintain inventory (consistent inventory updates).",
+        "metrics": {}
+      },
+      "coreTopics": [
+        "System Design",
+        "Scalability",
+        "Architecture"
+      ],
+      "resources": [
+        {
+          "title": "E-commerce Checkout (LeetCode Discuss)",
+          "link": "https://leetcode.com/discuss/interview-question/system-design/123456/Design-Ecommerce-Checkout-System",
+          "type": "discussion",
+          "depth": "just-enough",
+          "estimatedMinutes": 8
+        },
+        {
+          "title": "Checkout System Design (Medium)",
+          "link": "https://medium.com/@checkoutsys/design-an-e-commerce-checkout-system-123456",
+          "type": "article",
+          "depth": "deep-dive",
+          "estimatedMinutes": 12
+        }
+      ],
+      "tags": [
+        "interview",
+        "system-design",
+        "practice"
+      ],
+      "category": "System Design Interview",
+      "requiredConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "question-whatsapp-messaging-system",
+      "title": "Design WhatsApp (Messaging System)",
+      "prompt": "Design WhatsApp (Messaging System)",
+      "difficulty": "Medium",
+      "estimatedMinutes": 45,
+      "orderIndex": 4,
+      "constraints": {
+        "text": "Support 40B msgs/day; low latency (<500ms delivery); offline message queueing.",
+        "metrics": {
+          "storage": "40B"
+        }
+      },
+      "coreTopics": [
+        "System Design",
+        "Scalability",
+        "Architecture"
+      ],
+      "resources": [
+        {
+          "title": "Design WhatsApp (HelloInterview)",
+          "link": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/whatsapp",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "WhatsApp Architecture (ByteByteGo)",
+          "link": "https://blog.bytebytego.com/p/how-whatsapp-handles-40-billion-messages",
+          "type": "article",
+          "depth": "deep-dive",
+          "estimatedMinutes": 12
+        }
+      ],
+      "tags": [
+        "interview",
+        "system-design",
+        "practice"
+      ],
+      "category": "System Design Interview",
+      "requiredConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "question-youtube-video-streaming",
+      "title": "Design YouTube (Video Streaming Service)",
+      "prompt": "Design YouTube (Video Streaming Service)",
+      "difficulty": "Medium",
+      "estimatedMinutes": 45,
+      "orderIndex": 5,
+      "constraints": {
+        "text": "Handle large video uploads (GBs) and streaming; low latency playback; ~1M uploads/day, 100M views/day.",
+        "metrics": {}
+      },
+      "coreTopics": [
+        "System Design",
+        "Scalability",
+        "Architecture"
+      ],
+      "resources": [
+        {
+          "title": "Design YouTube (HelloInterview)",
+          "link": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/youtube",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Video Streaming Architecture (YouTube)",
+          "link": "https://www.youtube.com/watch?v=v5qsPnnNTSo",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        }
+      ],
+      "tags": [
+        "interview",
+        "system-design",
+        "practice"
+      ],
+      "category": "System Design Interview",
+      "requiredConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "question-a-cdn",
+      "title": "Design a CDN",
+      "prompt": "Design a CDN",
+      "difficulty": "Medium",
+      "estimatedMinutes": 45,
+      "orderIndex": 6,
+      "constraints": {
+        "text": "Cache static assets globally; minimize latency and origin load; near-real-time invalidation.",
+        "metrics": {}
+      },
+      "coreTopics": [
+        "System Design",
+        "Scalability",
+        "Architecture"
+      ],
+      "resources": [
+        {
+          "title": "How CDNs Work (Cloudflare)",
+          "link": "https://www.cloudflare.com/learning/cdn/how-cdns-work/",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Designing a CDN (HighScalability)",
+          "link": "https://highscalability.com/designing-a-distributed-cdn/",
+          "type": "article",
+          "depth": "deep-dive",
+          "estimatedMinutes": 12
+        }
+      ],
+      "tags": [
+        "interview",
+        "system-design",
+        "practice"
+      ],
+      "category": "System Design Interview",
+      "requiredConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "question-a-recommendation-engine",
+      "title": "Design a Recommendation Engine (e.g. Netflix)",
+      "prompt": "Design a Recommendation Engine (e.g. Netflix)",
+      "difficulty": "Hard",
+      "estimatedMinutes": 60,
+      "orderIndex": 7,
+      "constraints": {
+        "text": "Process millions of user preferences; real-time and batch components; low-latency personalized suggestions.",
+        "metrics": {}
+      },
+      "coreTopics": [
+        "System Design",
+        "Scalability",
+        "Architecture"
+      ],
+      "resources": [
+        {
+          "title": "Netflix Recommendation System (Netflix TechBlog)",
+          "link": "https://netflixtechblog.com/the-netflix-recommender-system-3f6983f5c281",
+          "type": "blog",
+          "depth": "just-enough",
+          "estimatedMinutes": 10
+        },
+        {
+          "title": "Collaborative Filtering (YouTube)",
+          "link": "https://www.youtube.com/watch?v=E6rEQ7mBEsA",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        }
+      ],
+      "tags": [
+        "interview",
+        "system-design",
+        "practice"
+      ],
+      "category": "System Design Interview",
+      "requiredConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "question-a-loginsignup-system",
+      "title": "Design a Login/Signup System",
+      "prompt": "Design a Login/Signup System",
+      "difficulty": "Easy",
+      "estimatedMinutes": 30,
+      "orderIndex": 8,
+      "constraints": {
+        "text": "Must be stateless (JWT) or session-based; secure (hash passwords, use TLS).",
+        "metrics": {}
+      },
+      "coreTopics": [
+        "System Design",
+        "Scalability",
+        "Architecture"
+      ],
+      "resources": [
+        {
+          "title": "User Authentication (Auth0 Docs)",
+          "link": "https://auth0.com/docs/legacy-authentication-schemes",
+          "type": "official doc",
+          "depth": "just-enough",
+          "estimatedMinutes": 25
+        },
+        {
+          "title": "Login System (Medium)",
+          "link": "https://medium.com/@auth/login-with-auth0-securely-5d4c1e7d3e44",
+          "type": "article",
+          "depth": "deep-dive",
+          "estimatedMinutes": 12
+        }
+      ],
+      "tags": [
+        "interview",
+        "system-design",
+        "practice"
+      ],
+      "category": "System Design Interview",
+      "requiredConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "question-a-news-feed",
+      "title": "Design a News Feed (Facebook/Instagram style)",
+      "prompt": "Design a News Feed (Facebook/Instagram style)",
+      "difficulty": "Hard",
+      "estimatedMinutes": 60,
+      "orderIndex": 9,
+      "constraints": {
+        "text": "Highly available; handle 2B users; support infinite scroll; allow ~1min staleness.",
+        "metrics": {
+          "users": "2B",
+          "storage": "2B"
+        }
+      },
+      "coreTopics": [
+        "System Design",
+        "Scalability",
+        "Architecture"
+      ],
+      "resources": [
+        {
+          "title": "Design News Feed (HelloInterview)",
+          "link": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/fb-news-feed",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Building News Feed (ByteByteGo)",
+          "link": "https://bytebytego.com/courses/system-design-interview/design-facebook-news-feed",
+          "type": "course",
+          "depth": "deep-dive",
+          "estimatedMinutes": 75
+        }
+      ],
+      "tags": [
+        "interview",
+        "system-design",
+        "practice"
+      ],
+      "category": "System Design Interview",
+      "requiredConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "question-a-search-service",
+      "title": "Design a Search Service (Autocomplete)",
+      "prompt": "Design a Search Service (Autocomplete)",
+      "difficulty": "Medium",
+      "estimatedMinutes": 45,
+      "orderIndex": 10,
+      "constraints": {
+        "text": "Support real-time search suggestions; update index dynamically; fast (<50ms) query.",
+        "metrics": {}
+      },
+      "coreTopics": [
+        "System Design",
+        "Scalability",
+        "Architecture"
+      ],
+      "resources": [
+        {
+          "title": "Autocomplete System Design (LeetCode Discuss)",
+          "link": "https://leetcode.com/discuss/interview-question/system-design/658963/System-Design-AutoComplete-Service",
+          "type": "discussion",
+          "depth": "just-enough",
+          "estimatedMinutes": 8
+        },
+        {
+          "title": "Search Architecture (Elasticsearch Docs)",
+          "link": "https://www.elastic.co/guide/en/elasticsearch/guide/current/index.html",
+          "type": "official doc",
+          "depth": "deep-dive",
+          "estimatedMinutes": 25
+        }
+      ],
+      "tags": [
+        "interview",
+        "system-design",
+        "practice"
+      ],
+      "category": "System Design Interview",
+      "requiredConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "question-a-url-shortening",
+      "title": "Design a URL Shortening Service (bit.ly)",
+      "prompt": "Design a URL Shortening Service (bit.ly)",
+      "difficulty": "Easy",
+      "estimatedMinutes": 30,
+      "orderIndex": 11,
+      "constraints": {
+        "text": "Handle billions of URLs; ensure unique short codes; minimize redirection latency.",
+        "metrics": {}
+      },
+      "coreTopics": [
+        "System Design",
+        "Scalability",
+        "Architecture"
+      ],
+      "resources": [
+        {
+          "title": "Design Bit.ly (HelloInterview)",
+          "link": "https://www.hellointerview.com/learn/system-design/problem-breakdowns/bit.ly",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "URL Shortener (LeetCode Discuss)",
+          "link": "https://leetcode.com/discuss/interview-question/349125/System-Design-URL-Shortener",
+          "type": "discussion",
+          "depth": "deep-dive",
+          "estimatedMinutes": 8
+        }
+      ],
+      "tags": [
+        "interview",
+        "system-design",
+        "practice"
+      ],
+      "category": "System Design Interview",
+      "requiredConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "question-a-social-network",
+      "title": "Design a Social Network Feed (pull vs push)",
+      "prompt": "Design a Social Network Feed (pull vs push)",
+      "difficulty": "Hard",
+      "estimatedMinutes": 60,
+      "orderIndex": 12,
+      "constraints": {
+        "text": "Compare push (fan-out on write) vs pull (on read); support celebrities with millions of followers.",
+        "metrics": {}
+      },
+      "coreTopics": [
+        "System Design",
+        "Scalability",
+        "Architecture"
+      ],
+      "resources": [
+        {
+          "title": "Push vs Pull (Twitter HighScalability)",
+          "link": "https://highscalability.com/push-vs-pull-which-one-really-wins",
+          "type": "article",
+          "depth": "just-enough",
+          "estimatedMinutes": 12
+        },
+        {
+          "title": "Social Feed Design (Medium)",
+          "link": "https://medium.com/@socialfeed/social-network-feed-design-123456",
+          "type": "article",
+          "depth": "deep-dive",
+          "estimatedMinutes": 12
+        }
+      ],
+      "tags": [
+        "interview",
+        "system-design",
+        "practice"
+      ],
+      "category": "System Design Interview",
+      "requiredConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "question-a-multiplayer-game",
+      "title": "Design a Multiplayer Game Server Architecture",
+      "prompt": "Design a Multiplayer Game Server Architecture",
+      "difficulty": "Hard",
+      "estimatedMinutes": 60,
+      "orderIndex": 13,
+      "constraints": {
+        "text": "Low-latency real-time updates; state synchronization; cheat prevention; support many concurrent players.",
+        "metrics": {}
+      },
+      "coreTopics": [
+        "System Design",
+        "Scalability",
+        "Architecture"
+      ],
+      "resources": [
+        {
+          "title": "Game Server Architecture (AWS Gamelift)",
+          "link": "https://aws.amazon.com/gamelift/",
+          "type": "official doc",
+          "depth": "just-enough",
+          "estimatedMinutes": 25
+        },
+        {
+          "title": "Realtime Game Design (YouTube)",
+          "link": "https://www.youtube.com/watch?v=6fT9Q6Qjx9w",
+          "type": "video",
+          "depth": "just-enough",
+          "estimatedMinutes": 18
+        }
+      ],
+      "tags": [
+        "interview",
+        "system-design",
+        "practice"
+      ],
+      "category": "System Design Interview",
+      "requiredConcepts": [],
+      "source": "systemDesign.json"
+    },
+    {
+      "id": "question-a-url-shortener",
+      "title": "Design a URL Shortener (TinyURL)",
+      "prompt": "Design a URL Shortener (TinyURL)",
+      "difficulty": "Easy",
+      "estimatedMinutes": 30,
+      "orderIndex": 14,
+      "constraints": {
+        "text": "High-scale system design challenge (Rank #1). Consider scalability, performance, consistency, and fault tolerance.",
+        "metrics": {
+          "rank": 1,
+          "category": "top-20"
+        }
+      },
+      "coreTopics": [
+        "Base62 Encoding",
+        "Database Scaling",
+        "Caching"
+      ],
+      "resources": [],
+      "tags": [
+        "interview",
+        "top-20",
+        "high-frequency"
+      ],
+      "category": "Top 20 Interview Questions",
+      "requiredConcepts": [
+        "Base62 Encoding",
+        "Database Scaling",
+        "Caching"
+      ],
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "question-a-rate-limiter",
+      "title": "Design a Rate Limiter",
+      "prompt": "Design a Rate Limiter",
+      "difficulty": "Easy",
+      "estimatedMinutes": 30,
+      "orderIndex": 15,
+      "constraints": {
+        "text": "High-scale system design challenge (Rank #2). Consider scalability, performance, consistency, and fault tolerance.",
+        "metrics": {
+          "rank": 2,
+          "category": "top-20"
+        }
+      },
+      "coreTopics": [
+        "Token Bucket",
+        "Sliding Window",
+        "Redis"
+      ],
+      "resources": [],
+      "tags": [
+        "interview",
+        "top-20",
+        "high-frequency"
+      ],
+      "category": "Top 20 Interview Questions",
+      "requiredConcepts": [
+        "Token Bucket",
+        "Sliding Window",
+        "Redis"
+      ],
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "question-a-key-value-store",
+      "title": "Design a Key-Value Store",
+      "prompt": "Design a Key-Value Store",
+      "difficulty": "Easy",
+      "estimatedMinutes": 30,
+      "orderIndex": 16,
+      "constraints": {
+        "text": "High-scale system design challenge (Rank #3). Consider scalability, performance, consistency, and fault tolerance.",
+        "metrics": {
+          "rank": 3,
+          "category": "top-20"
+        }
+      },
+      "coreTopics": [
+        "Consistent Hashing",
+        "Replication",
+        "Gossip Protocol",
+        "CAP"
+      ],
+      "resources": [],
+      "tags": [
+        "interview",
+        "top-20",
+        "high-frequency"
+      ],
+      "category": "Top 20 Interview Questions",
+      "requiredConcepts": [
+        "Consistent Hashing",
+        "Replication",
+        "Gossip Protocol",
+        "CAP"
+      ],
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "question-a-web-crawler",
+      "title": "Design a Web Crawler",
+      "prompt": "Design a Web Crawler",
+      "difficulty": "Easy",
+      "estimatedMinutes": 30,
+      "orderIndex": 17,
+      "constraints": {
+        "text": "High-scale system design challenge (Rank #4). Consider scalability, performance, consistency, and fault tolerance.",
+        "metrics": {
+          "rank": 4,
+          "category": "top-20"
+        }
+      },
+      "coreTopics": [
+        "BFS",
+        "Politeness Policy",
+        "URL Frontier"
+      ],
+      "resources": [],
+      "tags": [
+        "interview",
+        "top-20",
+        "high-frequency"
+      ],
+      "category": "Top 20 Interview Questions",
+      "requiredConcepts": [
+        "BFS",
+        "Politeness Policy",
+        "URL Frontier"
+      ],
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "question-a-notification-system",
+      "title": "Design a Notification System",
+      "prompt": "Design a Notification System",
+      "difficulty": "Easy",
+      "estimatedMinutes": 30,
+      "orderIndex": 18,
+      "constraints": {
+        "text": "High-scale system design challenge (Rank #5). Consider scalability, performance, consistency, and fault tolerance.",
+        "metrics": {
+          "rank": 5,
+          "category": "top-20"
+        }
+      },
+      "coreTopics": [
+        "Message Queues",
+        "Retry Mechanisms",
+        "Third-party APIs"
+      ],
+      "resources": [],
+      "tags": [
+        "interview",
+        "top-20",
+        "high-frequency"
+      ],
+      "category": "Top 20 Interview Questions",
+      "requiredConcepts": [
+        "Message Queues",
+        "Retry Mechanisms",
+        "Third-party APIs"
+      ],
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "question-a-news-feed",
+      "title": "Design a News Feed System",
+      "prompt": "Design a News Feed System",
+      "difficulty": "Easy",
+      "estimatedMinutes": 30,
+      "orderIndex": 19,
+      "constraints": {
+        "text": "High-scale system design challenge (Rank #6). Consider scalability, performance, consistency, and fault tolerance.",
+        "metrics": {
+          "rank": 6,
+          "category": "top-20"
+        }
+      },
+      "coreTopics": [
+        "Fanout on Read/Write",
+        "Pagination",
+        "Caching"
+      ],
+      "resources": [],
+      "tags": [
+        "interview",
+        "top-20",
+        "high-frequency"
+      ],
+      "category": "Top 20 Interview Questions",
+      "requiredConcepts": [
+        "Fanout on Read/Write",
+        "Pagination",
+        "Caching"
+      ],
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "question-a-chat-system",
+      "title": "Design a Chat System",
+      "prompt": "Design a Chat System",
+      "difficulty": "Easy",
+      "estimatedMinutes": 30,
+      "orderIndex": 20,
+      "constraints": {
+        "text": "High-scale system design challenge (Rank #7). Consider scalability, performance, consistency, and fault tolerance.",
+        "metrics": {
+          "rank": 7,
+          "category": "top-20"
+        }
+      },
+      "coreTopics": [
+        "WebSockets",
+        "Push Notifications",
+        "Database Schema"
+      ],
+      "resources": [],
+      "tags": [
+        "interview",
+        "top-20",
+        "high-frequency"
+      ],
+      "category": "Top 20 Interview Questions",
+      "requiredConcepts": [
+        "WebSockets",
+        "Push Notifications",
+        "Database Schema"
+      ],
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "question-a-search-autocomplete",
+      "title": "Design a Search Autocomplete System",
+      "prompt": "Design a Search Autocomplete System",
+      "difficulty": "Medium",
+      "estimatedMinutes": 45,
+      "orderIndex": 21,
+      "constraints": {
+        "text": "High-scale system design challenge (Rank #8). Consider scalability, performance, consistency, and fault tolerance.",
+        "metrics": {
+          "rank": 8,
+          "category": "top-20"
+        }
+      },
+      "coreTopics": [
+        "Tries",
+        "Top K Problem",
+        "Data Aggregation"
+      ],
+      "resources": [],
+      "tags": [
+        "interview",
+        "top-20",
+        "high-frequency"
+      ],
+      "category": "Top 20 Interview Questions",
+      "requiredConcepts": [
+        "Tries",
+        "Top K Problem",
+        "Data Aggregation"
+      ],
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "question-youtube",
+      "title": "Design YouTube",
+      "prompt": "Design YouTube",
+      "difficulty": "Medium",
+      "estimatedMinutes": 45,
+      "orderIndex": 22,
+      "constraints": {
+        "text": "High-scale system design challenge (Rank #9). Consider scalability, performance, consistency, and fault tolerance.",
+        "metrics": {
+          "rank": 9,
+          "category": "top-20"
+        }
+      },
+      "coreTopics": [
+        "CDN",
+        "Video Transcoding",
+        "Blob Storage"
+      ],
+      "resources": [],
+      "tags": [
+        "interview",
+        "top-20",
+        "high-frequency"
+      ],
+      "category": "Top 20 Interview Questions",
+      "requiredConcepts": [
+        "CDN",
+        "Video Transcoding",
+        "Blob Storage"
+      ],
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "question-a-distributed-cache",
+      "title": "Design a Distributed Cache",
+      "prompt": "Design a Distributed Cache",
+      "difficulty": "Medium",
+      "estimatedMinutes": 45,
+      "orderIndex": 23,
+      "constraints": {
+        "text": "High-scale system design challenge (Rank #10). Consider scalability, performance, consistency, and fault tolerance.",
+        "metrics": {
+          "rank": 10,
+          "category": "top-20"
+        }
+      },
+      "coreTopics": [
+        "Eviction Policies",
+        "Concurrent Access",
+        "TCP/UDP"
+      ],
+      "resources": [],
+      "tags": [
+        "interview",
+        "top-20",
+        "high-frequency"
+      ],
+      "category": "Top 20 Interview Questions",
+      "requiredConcepts": [
+        "Eviction Policies",
+        "Concurrent Access",
+        "TCP/UDP"
+      ],
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "question-a-distributed-message",
+      "title": "Design a Distributed Message Queue",
+      "prompt": "Design a Distributed Message Queue",
+      "difficulty": "Medium",
+      "estimatedMinutes": 45,
+      "orderIndex": 24,
+      "constraints": {
+        "text": "High-scale system design challenge (Rank #11). Consider scalability, performance, consistency, and fault tolerance.",
+        "metrics": {
+          "rank": 11,
+          "category": "top-20"
+        }
+      },
+      "coreTopics": [
+        "Producers/Consumers",
+        "Topics/Partitions",
+        "Fault Tolerance"
+      ],
+      "resources": [],
+      "tags": [
+        "interview",
+        "top-20",
+        "high-frequency"
+      ],
+      "category": "Top 20 Interview Questions",
+      "requiredConcepts": [
+        "Producers/Consumers",
+        "Topics/Partitions",
+        "Fault Tolerance"
+      ],
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "question-an-ad-click",
+      "title": "Design an Ad Click Event Aggregation System",
+      "prompt": "Design an Ad Click Event Aggregation System",
+      "difficulty": "Medium",
+      "estimatedMinutes": 45,
+      "orderIndex": 25,
+      "constraints": {
+        "text": "High-scale system design challenge (Rank #12). Consider scalability, performance, consistency, and fault tolerance.",
+        "metrics": {
+          "rank": 12,
+          "category": "top-20"
+        }
+      },
+      "coreTopics": [
+        "MapReduce",
+        "Time-series Database",
+        "Stream Processing"
+      ],
+      "resources": [],
+      "tags": [
+        "interview",
+        "top-20",
+        "high-frequency"
+      ],
+      "category": "Top 20 Interview Questions",
+      "requiredConcepts": [
+        "MapReduce",
+        "Time-series Database",
+        "Stream Processing"
+      ],
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "question-a-hotel-reservation",
+      "title": "Design a Hotel Reservation System",
+      "prompt": "Design a Hotel Reservation System",
+      "difficulty": "Medium",
+      "estimatedMinutes": 45,
+      "orderIndex": 26,
+      "constraints": {
+        "text": "High-scale system design challenge (Rank #13). Consider scalability, performance, consistency, and fault tolerance.",
+        "metrics": {
+          "rank": 13,
+          "category": "top-20"
+        }
+      },
+      "coreTopics": [
+        "Concurrency Control",
+        "ACID Transactions",
+        "Idempotency"
+      ],
+      "resources": [],
+      "tags": [
+        "interview",
+        "top-20",
+        "high-frequency"
+      ],
+      "category": "Top 20 Interview Questions",
+      "requiredConcepts": [
+        "Concurrency Control",
+        "ACID Transactions",
+        "Idempotency"
+      ],
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "question-a-payment-system",
+      "title": "Design a Payment System",
+      "prompt": "Design a Payment System",
+      "difficulty": "Medium",
+      "estimatedMinutes": 45,
+      "orderIndex": 27,
+      "constraints": {
+        "text": "High-scale system design challenge (Rank #14). Consider scalability, performance, consistency, and fault tolerance.",
+        "metrics": {
+          "rank": 14,
+          "category": "top-20"
+        }
+      },
+      "coreTopics": [
+        "Double-entry Ledger",
+        "Idempotency Keys",
+        "Two-Phase Commit"
+      ],
+      "resources": [],
+      "tags": [
+        "interview",
+        "top-20",
+        "high-frequency"
+      ],
+      "category": "Top 20 Interview Questions",
+      "requiredConcepts": [
+        "Double-entry Ledger",
+        "Idempotency Keys",
+        "Two-Phase Commit"
+      ],
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "question-a-distributed-id",
+      "title": "Design a Distributed ID Generator",
+      "prompt": "Design a Distributed ID Generator",
+      "difficulty": "Hard",
+      "estimatedMinutes": 60,
+      "orderIndex": 28,
+      "constraints": {
+        "text": "High-scale system design challenge (Rank #15). Consider scalability, performance, consistency, and fault tolerance.",
+        "metrics": {
+          "rank": 15,
+          "category": "top-20"
+        }
+      },
+      "coreTopics": [
+        "Snowflake algorithm",
+        "Clock Synchronization",
+        "Concurrency"
+      ],
+      "resources": [],
+      "tags": [
+        "interview",
+        "top-20",
+        "high-frequency"
+      ],
+      "category": "Top 20 Interview Questions",
+      "requiredConcepts": [
+        "Snowflake algorithm",
+        "Clock Synchronization",
+        "Concurrency"
+      ],
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "question-google-docs-collaborative",
+      "title": "Design Google Docs (Collaborative Editor)",
+      "prompt": "Design Google Docs (Collaborative Editor)",
+      "difficulty": "Hard",
+      "estimatedMinutes": 60,
+      "orderIndex": 29,
+      "constraints": {
+        "text": "High-scale system design challenge (Rank #16). Consider scalability, performance, consistency, and fault tolerance.",
+        "metrics": {
+          "rank": 16,
+          "category": "top-20"
+        }
+      },
+      "coreTopics": [
+        "Operational Transformation (OT)",
+        "CRDTs",
+        "WebSockets"
+      ],
+      "resources": [],
+      "tags": [
+        "interview",
+        "top-20",
+        "high-frequency"
+      ],
+      "category": "Top 20 Interview Questions",
+      "requiredConcepts": [
+        "Operational Transformation (OT)",
+        "CRDTs",
+        "WebSockets"
+      ],
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "question-a-metrics-monitoring",
+      "title": "Design a Metrics Monitoring and Alerting System",
+      "prompt": "Design a Metrics Monitoring and Alerting System",
+      "difficulty": "Hard",
+      "estimatedMinutes": 60,
+      "orderIndex": 30,
+      "constraints": {
+        "text": "High-scale system design challenge (Rank #17). Consider scalability, performance, consistency, and fault tolerance.",
+        "metrics": {
+          "rank": 17,
+          "category": "top-20"
+        }
+      },
+      "coreTopics": [
+        "Time-Series Data",
+        "Pull vs Push",
+        "Alerting Engine"
+      ],
+      "resources": [],
+      "tags": [
+        "interview",
+        "top-20",
+        "high-frequency"
+      ],
+      "category": "Top 20 Interview Questions",
+      "requiredConcepts": [
+        "Time-Series Data",
+        "Pull vs Push",
+        "Alerting Engine"
+      ],
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "question-a-flash-sale",
+      "title": "Design a Flash Sale System (Ticketmaster/Amazon Prime Day)",
+      "prompt": "Design a Flash Sale System (Ticketmaster/Amazon Prime Day)",
+      "difficulty": "Hard",
+      "estimatedMinutes": 60,
+      "orderIndex": 31,
+      "constraints": {
+        "text": "High-scale system design challenge (Rank #18). Consider scalability, performance, consistency, and fault tolerance.",
+        "metrics": {
+          "rank": 18,
+          "category": "top-20"
+        }
+      },
+      "coreTopics": [
+        "Redis Lua Scripts",
+        "Rate Limiting",
+        "Queueing"
+      ],
+      "resources": [],
+      "tags": [
+        "interview",
+        "top-20",
+        "high-frequency"
+      ],
+      "category": "Top 20 Interview Questions",
+      "requiredConcepts": [
+        "Redis Lua Scripts",
+        "Rate Limiting",
+        "Queueing"
+      ],
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "question-google-drive-cloud",
+      "title": "Design Google Drive (Cloud File Storage)",
+      "prompt": "Design Google Drive (Cloud File Storage)",
+      "difficulty": "Hard",
+      "estimatedMinutes": 60,
+      "orderIndex": 32,
+      "constraints": {
+        "text": "High-scale system design challenge (Rank #19). Consider scalability, performance, consistency, and fault tolerance.",
+        "metrics": {
+          "rank": 19,
+          "category": "top-20"
+        }
+      },
+      "coreTopics": [
+        "Block Storage",
+        "Metadata Database",
+        "Rsync algorithms"
+      ],
+      "resources": [],
+      "tags": [
+        "interview",
+        "top-20",
+        "high-frequency"
+      ],
+      "category": "Top 20 Interview Questions",
+      "requiredConcepts": [
+        "Block Storage",
+        "Metadata Database",
+        "Rsync algorithms"
+      ],
+      "source": "SystemDesign2.json"
+    },
+    {
+      "id": "question-a-recommendation-system",
+      "title": "Design a Recommendation System",
+      "prompt": "Design a Recommendation System",
+      "difficulty": "Hard",
+      "estimatedMinutes": 60,
+      "orderIndex": 33,
+      "constraints": {
+        "text": "High-scale system design challenge (Rank #20). Consider scalability, performance, consistency, and fault tolerance.",
+        "metrics": {
+          "rank": 20,
+          "category": "top-20"
+        }
+      },
+      "coreTopics": [
+        "Collaborative Filtering",
+        "Matrix Factorization",
+        "Batch Processing"
+      ],
+      "resources": [],
+      "tags": [
+        "interview",
+        "top-20",
+        "high-frequency"
+      ],
+      "category": "Top 20 Interview Questions",
+      "requiredConcepts": [
+        "Collaborative Filtering",
+        "Matrix Factorization",
+        "Batch Processing"
+      ],
+      "source": "SystemDesign2.json"
+    }
+  ],
+  "taxonomy": {
+    "difficulties": [
+      "Easy",
+      "Medium",
+      "Hard"
+    ],
+    "categories": [
+      "System Design Interview",
+      "Top 20 Interview Questions"
+    ],
+    "coreTopics": [
+      "System Design",
+      "Scalability",
+      "Architecture",
+      "Base62 Encoding",
+      "Database Scaling",
+      "Caching",
+      "Token Bucket",
+      "Sliding Window",
+      "Redis",
+      "Consistent Hashing",
+      "Replication",
+      "Gossip Protocol",
+      "CAP",
+      "BFS",
+      "Politeness Policy",
+      "URL Frontier",
+      "Message Queues",
+      "Retry Mechanisms",
+      "Third-party APIs",
+      "Fanout on Read/Write",
+      "Pagination",
+      "WebSockets",
+      "Push Notifications",
+      "Database Schema",
+      "Tries",
+      "Top K Problem",
+      "Data Aggregation",
+      "CDN",
+      "Video Transcoding",
+      "Blob Storage",
+      "Eviction Policies",
+      "Concurrent Access",
+      "TCP/UDP",
+      "Producers/Consumers",
+      "Topics/Partitions",
+      "Fault Tolerance",
+      "MapReduce",
+      "Time-series Database",
+      "Stream Processing",
+      "Concurrency Control",
+      "ACID Transactions",
+      "Idempotency",
+      "Double-entry Ledger",
+      "Idempotency Keys",
+      "Two-Phase Commit",
+      "Snowflake algorithm",
+      "Clock Synchronization",
+      "Concurrency",
+      "Operational Transformation (OT)",
+      "CRDTs",
+      "Time-Series Data",
+      "Pull vs Push",
+      "Alerting Engine",
+      "Redis Lua Scripts",
+      "Rate Limiting",
+      "Queueing",
+      "Block Storage",
+      "Metadata Database",
+      "Rsync algorithms",
+      "Collaborative Filtering",
+      "Matrix Factorization",
+      "Batch Processing"
+    ],
+    "tags": [
+      "interview",
+      "system-design",
+      "practice",
+      "top-20",
+      "high-frequency"
+    ]
+  }
+}
