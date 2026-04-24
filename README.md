@@ -1,4 +1,4 @@
-# DSA Flash Cards - Spaced Repetition Learning Platform
+# Beat Interview - Spaced Repetition Learning Platform
 
 [![Node.js](https://img.shields.io/badge/Node.js-20+-green.svg)](https://nodejs.org/)
 [![React](https://img.shields.io/badge/React-18.3-blue.svg)](https://reactjs.org/)
@@ -90,8 +90,8 @@ All user data is stored locally in your browser using `localStorage`:
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/your-username/DSAFlashCards.git
-cd DSAFlashCards
+git clone https://github.com/HarshDutt17/beat-interview.git
+cd beat-interview
 ```
 
 2. **Install dependencies**
@@ -169,7 +169,7 @@ src/
 We welcome contributions from the community! Here's how you can help:
 
 ### 🐛 Reporting Issues
-Found a bug or have a suggestion? [Open an issue](https://github.com/your-username/DSAFlashCards/issues/new)
+Found a bug or have a suggestion? [Open an issue](https://github.com/HarshDutt17/beat-interview/issues/new)
 
 **Please include:**
 - Clear description of the problem
@@ -207,7 +207,19 @@ git push origin feature/amazing-feature
 - **Add system design case studies**
 - **Translate content** (internationalization)
 
-### 💡 Feature Ideas
+### � Reporting Broken Links
+Found broken or outdated links in the content? Help us maintain quality resources!
+
+**Please report broken links by:**
+- [Opening an issue](https://github.com/HarshDutt17/beat-interview/issues/new) with the broken URL and suggested replacement
+- Or submit a [pull request](https://github.com/HarshDutt17/beat-interview/pulls) with the fix
+
+**Include in your report:**
+- The broken URL and where you found it
+- What the link should point to (if known)
+- Any error messages or issues encountered
+
+### �💡 Feature Ideas
 - Export/import progress data
 - Study reminders and notifications
 - Social features (leaderboards, sharing)
