@@ -1,51 +1,103 @@
 import { Link, useLocation } from 'react-router-dom'
+import { useState } from 'react'
+import { Menu, X, Home } from 'lucide-react'
 
 const NAV_ITEMS = [
-  { path: '/beatcode', label: 'Dashboard' },
-  { path: '/beatcode/browse', label: 'Browse' },
-  { path: '/beatcode/study', label: 'Study' },
-  { path: '/beatcode/schedule', label: 'Schedule' },
-  { path: '/beatcode/settings', label: 'Settings' },
-  { path: '/beatcode/about', label: 'About' },
+  { name: 'Dashboard', href: '/beatcode', exact: true },
+  { name: 'Browse', href: '/beatcode/browse' },
+  { name: 'Study', href: '/beatcode/study' },
+  { name: 'Schedule', href: '/beatcode/schedule' },
+  { name: 'Settings', href: '/beatcode/settings' },
+  { name: 'About', href: '/beatcode/about' },
 ]
 
 export default function Header() {
   const location = useLocation()
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+  const isActive = (href: string, exact = false) => {
+    if (exact) {
+      return location.pathname === href
+    }
+    return location.pathname.startsWith(href)
+  }
 
   return (
-    <header
-      className="border-b flex items-center justify-between px-6 py-3"
-      style={{ borderColor: 'var(--color-border)', backgroundColor: 'var(--color-surface)' }}
-    >
-      <div className="flex items-center gap-4">
-        <Link to="/" className="text-xs px-2 py-1 rounded-md border no-underline"
-              style={{ borderColor: 'var(--color-border)', color: 'var(--color-text-secondary)' }}>
-          ← Home
-        </Link>
-        <Link to="/beatcode" className="flex items-center gap-2 no-underline" style={{ color: 'var(--color-text)' }}>
-          <span className="text-2xl">🎯</span>
-          <span className="text-lg font-bold tracking-tight">BeatCode</span>
-        </Link>
-      </div>
-
-      <nav className="flex gap-1">
-        {NAV_ITEMS.map(item => {
-          const active = location.pathname === item.path
-          return (
+    <header className="bg-white dark:bg-gray-800 shadow">
+      <div className="container mx-auto px-4">
+        <div className="flex justify-between h-16">
+          <div className="flex">
+            {/* Logo */}
             <Link
-              key={item.path}
-              to={item.path}
-              className="px-3 py-1.5 rounded-lg text-sm font-medium no-underline transition-colors"
-              style={{
-                backgroundColor: active ? 'var(--color-primary)' : 'transparent',
-                color: active ? '#fff' : 'var(--color-text-secondary)',
-              }}
+              to="/"
+              className="flex-shrink-0 flex items-center px-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+              title="Back to Home"
             >
-              {item.label}
+              <Home className="h-6 w-6" />
             </Link>
-          )
-        })}
-      </nav>
+
+            <Link to="/beatcode" className="flex-shrink-0 flex items-center px-4">
+              <div className="text-xl font-bold text-blue-600 dark:text-blue-400">
+                🎯 BeatCode
+              </div>
+            </Link>
+
+            {/* Desktop navigation */}
+            <nav className="hidden md:flex space-x-8 ml-6">
+              {NAV_ITEMS.map((item) => (
+                <Link
+                  key={item.href}
+                  to={item.href}
+                  className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors ${
+                    isActive(item.href, item.exact)
+                      ? 'border-blue-500 text-gray-900 dark:text-white'
+                      : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200'
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </nav>
+          </div>
+
+          {/* Mobile menu button */}
+          <div className="md:hidden flex items-center">
+            <button
+              type="button"
+              className="text-gray-400 hover:text-gray-500 focus:outline-none focus:text-gray-500"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              {mobileMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile navigation */}
+        {mobileMenuOpen && (
+          <div className="md:hidden">
+            <div className="pt-2 pb-3 space-y-1">
+              {NAV_ITEMS.map((item) => (
+                <Link
+                  key={item.href}
+                  to={item.href}
+                  className={`block pl-3 pr-4 py-2 border-l-4 text-base font-medium transition-colors ${
+                    isActive(item.href, item.exact)
+                      ? 'border-blue-500 text-blue-700 bg-blue-50 dark:bg-blue-900/20 dark:text-blue-400'
+                      : 'border-transparent text-gray-500 hover:text-gray-700 hover:bg-gray-50 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-200 dark:hover:bg-gray-700'
+                  }`}
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
     </header>
   )
 }
